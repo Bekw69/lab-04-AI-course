@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv05_en",
+  "condition": "clean",
+  "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Tan Nury LLP\",\n  \"seller_bin\": \"628892634684\",\n  \"buyer_name\": \"Ereymentau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Eggs, 30 pcs\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Salt, 1 kg\",\n      \"qty\": 135,\n      \"unit_price\": 140,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Wheat flour, grade 1, 50 kg\",\n      \"qty\": 115,\n      \"unit_price\": 14550,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Milk, 1 L\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+  "seconds": 82.8,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "9e8092a20157f29bd3f6e625b00ce6306f638e26e8fa63d8c07629c164261bdf",
+  "finished_at_utc": "2026-10-19T19:54:37.806752+00:00"
+}

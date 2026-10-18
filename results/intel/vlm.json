@@ -1,0 +1,4240 @@
+[
+  {
+    "seconds": 87.72,
+    "device": "CPU",
+    "image_sha256": "8ca041b5946b1c60bc960808a41dbdc7acdd5205591a207056a43201bea47519",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 317
+    },
+    "finished_at_utc": "2026-10-19T19:28:17.079663+00:00",
+    "doc_id": "inv01_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"2026-09-29\",\n  \"seller_name\": \"Нарынкөл Трейд\",\n  \"seller_bin\": \"101030509027\",\n  \"buyer_name\": \"Арай Маркет\",\n  \"items\": [\n    {\n      \"name\": \"Жумыртка, 30 дана\",\n      \"qty\": 145,\n      \"unit_price\": 1950,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Иримшік, 1 кг\",\n      \"qty\": 90,\n      \"unit_price\": 3850,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Кунбағыс майы, 5 л\",\n      \"qty\": 95,\n      \"unit_price\": 3250,\n      \"amount\": 308750\n    },\n    {\n      \"name\": \"Куриш, 25 кг\",\n      \"qty\": 120,\n      \"unit_price\": 17400,\n      \"amount\": 2088000\n    }\n  ],\n  \"total\": 3026000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "2026-09-29",
+      "seller_name": "Нарынкөл Трейд",
+      "seller_bin": "101030509027",
+      "buyer_name": "Арай Маркет",
+      "items": [
+        {
+          "name": "Жумыртка, 30 дана",
+          "qty": 145,
+          "unit_price": 1950,
+          "amount": 282750
+        },
+        {
+          "name": "Иримшік, 1 кг",
+          "qty": 90,
+          "unit_price": 3850,
+          "amount": 346500
+        },
+        {
+          "name": "Кунбағыс майы, 5 л",
+          "qty": 95,
+          "unit_price": 3250,
+          "amount": 308750
+        },
+        {
+          "name": "Куриш, 25 кг",
+          "qty": 120,
+          "unit_price": 17400,
+          "amount": 2088000
+        }
+      ],
+      "total": 3026000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 26.34,
+    "device": "CPU",
+    "image_sha256": "ec7b5ec62c9cd68e3ac6976d0f7b8857dd2bd5177735e1dff5f966168f92856c",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 310
+    },
+    "finished_at_utc": "2026-10-19T19:28:43.438316+00:00",
+    "doc_id": "inv01_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"Нарынкор Трейд\",\n  \"seller_bin\": \"101030509027\",\n  \"buyer_name\": \"Арал Маркет\",\n  \"items\": [\n    {\n      \"name\": \"Жилетка, 30 дан\",\n      \"qty\": 145,\n      \"unit_price\": 1950,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Ирчун, 1 кг\",\n      \"qty\": 90,\n      \"unit_price\": 3450,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Куббачылы май, 5 п\",\n      \"qty\": 95,\n      \"unit_price\": 3250,\n      \"amount\": 308750\n    },\n    {\n      \"name\": \"Герс, 25 кг\",\n      \"qty\": 120,\n      \"unit_price\": 17400,\n      \"amount\": 208800\n    }\n  ],\n  \"total\": 302600000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "29.09.2026",
+      "seller_name": "Нарынкор Трейд",
+      "seller_bin": "101030509027",
+      "buyer_name": "Арал Маркет",
+      "items": [
+        {
+          "name": "Жилетка, 30 дан",
+          "qty": 145,
+          "unit_price": 1950,
+          "amount": 282750
+        },
+        {
+          "name": "Ирчун, 1 кг",
+          "qty": 90,
+          "unit_price": 3450,
+          "amount": 346500
+        },
+        {
+          "name": "Куббачылы май, 5 п",
+          "qty": 95,
+          "unit_price": 3250,
+          "amount": 308750
+        },
+        {
+          "name": "Герс, 25 кг",
+          "qty": 120,
+          "unit_price": 17400,
+          "amount": 208800
+        }
+      ],
+      "total": 302600000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 79.18,
+    "device": "CPU",
+    "image_sha256": "190f8b8cd31e946a83a3bae5f94db3bdb1ec2cddeaee9ca2820727e88ad5936a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 314
+    },
+    "finished_at_utc": "2026-10-19T19:30:02.672409+00:00",
+    "doc_id": "inv01_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"TOO «Нарынкол Трейд»\",\n  \"seller_bin\": \"101030509027\",\n  \"buyer_name\": \"TOO «Арай Маркет»\",\n  \"items\": [\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 145,\n      \"unit_price\": 1950,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 90,\n      \"unit_price\": 3850,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 95,\n      \"unit_price\": 3250,\n      \"amount\": 308750\n    },\n    {\n      \"name\": \"Рис, 25 кг\",\n      \"qty\": 120,\n      \"unit_price\": 17400,\n      \"amount\": 2088000\n    }\n  ],\n  \"total\": 3026000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "29.09.2026",
+      "seller_name": "TOO «Нарынкол Трейд»",
+      "seller_bin": "101030509027",
+      "buyer_name": "TOO «Арай Маркет»",
+      "items": [
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 145,
+          "unit_price": 1950,
+          "amount": 282750
+        },
+        {
+          "name": "Сыр, 1 кг",
+          "qty": 90,
+          "unit_price": 3850,
+          "amount": 346500
+        },
+        {
+          "name": "Масло подсолнечное, 5 л",
+          "qty": 95,
+          "unit_price": 3250,
+          "amount": 308750
+        },
+        {
+          "name": "Рис, 25 кг",
+          "qty": 120,
+          "unit_price": 17400,
+          "amount": 2088000
+        }
+      ],
+      "total": 3026000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 29.39,
+    "device": "CPU",
+    "image_sha256": "7aa3192eb7f9aa1741f3487b321ec2750d64913b6b21a2df1a4a1b37b7a4ff65",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 313
+    },
+    "finished_at_utc": "2026-10-19T19:30:32.102691+00:00",
+    "doc_id": "inv01_ru",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"ТОО «Арал Маркет»\",\n  \"seller_bin\": \"10103009027\",\n  \"buyer_name\": \"ТОО «Арал Маркет»\",\n  \"items\": [\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 145,\n      \"unit_price\": 1550,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 90,\n      \"unit_price\": 3850,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 95,\n      \"unit_price\": 3250,\n      \"amount\": 708750\n    },\n    {\n      \"name\": \"Рис, 25 кг\",\n      \"qty\": 120,\n      \"unit_price\": 17400,\n      \"amount\": 208800\n    }\n  ],\n  \"total\": 30260000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "29.09.2026",
+      "seller_name": "ТОО «Арал Маркет»",
+      "seller_bin": "10103009027",
+      "buyer_name": "ТОО «Арал Маркет»",
+      "items": [
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 145,
+          "unit_price": 1550,
+          "amount": 282750
+        },
+        {
+          "name": "Сыр, 1 кг",
+          "qty": 90,
+          "unit_price": 3850,
+          "amount": 346500
+        },
+        {
+          "name": "Масло подсолнечное, 5 л",
+          "qty": 95,
+          "unit_price": 3250,
+          "amount": 708750
+        },
+        {
+          "name": "Рис, 25 кг",
+          "qty": 120,
+          "unit_price": 17400,
+          "amount": 208800
+        }
+      ],
+      "total": 30260000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 81.5,
+    "device": "CPU",
+    "image_sha256": "a89248299048984bd1dab7ba5e4b2721188265191e8d8d9f2ebe251b3f8aa717",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 275
+    },
+    "finished_at_utc": "2026-10-19T19:31:53.772690+00:00",
+    "doc_id": "inv01_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"Narynkol Trade LLP\",\n  \"seller_bin\": \"101030509027\",\n  \"buyer_name\": \"Arai Market LLP\",\n  \"items\": [\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 145,\n      \"unit_price\": 1950,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Cheese\",\n      \"qty\": 90,\n      \"unit_price\": 3850,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Sunflower oil\",\n      \"qty\": 95,\n      \"unit_price\": 3250,\n      \"amount\": 308750\n    },\n    {\n      \"name\": \"Rice\",\n      \"qty\": 120,\n      \"unit_price\": 17400,\n      \"amount\": 2088000\n    }\n  ],\n  \"total\": 3026000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "29.09.2026",
+      "seller_name": "Narynkol Trade LLP",
+      "seller_bin": "101030509027",
+      "buyer_name": "Arai Market LLP",
+      "items": [
+        {
+          "name": "Eggs",
+          "qty": 145,
+          "unit_price": 1950,
+          "amount": 282750
+        },
+        {
+          "name": "Cheese",
+          "qty": 90,
+          "unit_price": 3850,
+          "amount": 346500
+        },
+        {
+          "name": "Sunflower oil",
+          "qty": 95,
+          "unit_price": 3250,
+          "amount": 308750
+        },
+        {
+          "name": "Rice",
+          "qty": 120,
+          "unit_price": 17400,
+          "amount": 2088000
+        }
+      ],
+      "total": 3026000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 22.46,
+    "device": "CPU",
+    "image_sha256": "8a63d38cdc576f23fc844d19dc654801611c82df9672a7a5a459318bc5130dfd",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 273
+    },
+    "finished_at_utc": "2026-10-19T19:32:16.261758+00:00",
+    "doc_id": "inv01_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8043\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"Narynskol Trade LLP\",\n  \"seller_bin\": \"1010300509027\",\n  \"buyer_name\": \"Anai Market LLP\",\n  \"items\": [\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 30,\n      \"unit_price\": 1550,\n      \"amount\": 282750\n    },\n    {\n      \"name\": \"Cheese\",\n      \"qty\": 1,\n      \"unit_price\": 3450,\n      \"amount\": 346500\n    },\n    {\n      \"name\": \"Surfboard oil\",\n      \"qty\": 5,\n      \"unit_price\": 3250,\n      \"amount\": 308750\n    },\n    {\n      \"name\": \"Rice\",\n      \"qty\": 25,\n      \"unit_price\": 17400,\n      \"amount\": 408800\n    }\n  ],\n  \"total\": 30260000\n}\n```",
+    "pred": {
+      "invoice_number": "8043",
+      "date": "29.09.2026",
+      "seller_name": "Narynskol Trade LLP",
+      "seller_bin": "1010300509027",
+      "buyer_name": "Anai Market LLP",
+      "items": [
+        {
+          "name": "Eggs",
+          "qty": 30,
+          "unit_price": 1550,
+          "amount": 282750
+        },
+        {
+          "name": "Cheese",
+          "qty": 1,
+          "unit_price": 3450,
+          "amount": 346500
+        },
+        {
+          "name": "Surfboard oil",
+          "qty": 5,
+          "unit_price": 3250,
+          "amount": 308750
+        },
+        {
+          "name": "Rice",
+          "qty": 25,
+          "unit_price": 17400,
+          "amount": 408800
+        }
+      ],
+      "total": 30260000
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": false,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": false,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 73.07,
+    "device": "CPU",
+    "image_sha256": "db6410a28a266be19edd0e5b1ca02db70a5ff871e95b6f021d0941f760f98402",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 212
+    },
+    "finished_at_utc": "2026-10-19T19:33:29.349051+00:00",
+    "doc_id": "inv02_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"Шалкар Логистик\",\n  \"seller_bin\": \"376583942701\",\n  \"buyer_name\": \"Нарынкол Трейд\",\n  \"items\": [\n    {\n      \"name\": \"Карақұмық, 25 кг\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Кунбағыс майы, 5 л\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+    "pred": {
+      "invoice_number": "5149",
+      "date": "2026-09-14",
+      "seller_name": "Шалкар Логистик",
+      "seller_bin": "376583942701",
+      "buyer_name": "Нарынкол Трейд",
+      "items": [
+        {
+          "name": "Карақұмық, 25 кг",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 1320000
+        },
+        {
+          "name": "Кунбағыс майы, 5 л",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 17.51,
+    "device": "CPU",
+    "image_sha256": "c4d3c67493e5341d4ab1261afda3b8be37b6d541a4e2a3efa9f61f7ce0f42c7b",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 192
+    },
+    "finished_at_utc": "2026-10-19T19:33:46.895917+00:00",
+    "doc_id": "inv02_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"Шардар Логистик\",\n  \"seller_bin\": \"3765894270\",\n  \"buyer_name\": \"Нариман Трейд\",\n  \"items\": [\n    {\n      \"name\": \"Каркасный\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 132000\n    },\n    {\n      \"name\": \"Кубанский\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+    "pred": {
+      "invoice_number": "5149",
+      "date": "2026-09-14",
+      "seller_name": "Шардар Логистик",
+      "seller_bin": "3765894270",
+      "buyer_name": "Нариман Трейд",
+      "items": [
+        {
+          "name": "Каркасный",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 132000
+        },
+        {
+          "name": "Кубанский",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 79.6,
+    "device": "CPU",
+    "image_sha256": "a253d5f764d19c8f76e4bc439bb88ef6e22824795ad910c99e8f2c7bd777a07b",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 217
+    },
+    "finished_at_utc": "2026-10-19T19:35:06.514880+00:00",
+    "doc_id": "inv02_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": 5149,\n  \"date\": \"14.09.2026\",\n  \"seller_name\": \"TOO «Шалкар Логистик»\",\n  \"seller_bin\": \"376583942701\",\n  \"buyer_name\": \"TOO «Нарынкол Трейд»\",\n  \"items\": [\n    {\n      \"name\": \"Гречка, 25 кг\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+    "pred": {
+      "invoice_number": 5149,
+      "date": "14.09.2026",
+      "seller_name": "TOO «Шалкар Логистик»",
+      "seller_bin": "376583942701",
+      "buyer_name": "TOO «Нарынкол Трейд»",
+      "items": [
+        {
+          "name": "Гречка, 25 кг",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 1320000
+        },
+        {
+          "name": "Масло подсолнечное, 5 л",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": false,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 19.77,
+    "device": "CPU",
+    "image_sha256": "1abccc165609877530c222a3debb9edba843da984a2e9b821ed375954f758c9a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 180
+    },
+    "finished_at_utc": "2026-10-19T19:35:26.299983+00:00",
+    "doc_id": "inv02_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Шапар Логистик\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Греца\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Масло подсолнечное\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}",
+    "pred": {
+      "invoice_number": "5149",
+      "date": "2026-09-14",
+      "seller_name": "TOO ",
+      "seller_bin": "Шапар Логистик",
+      "buyer_name": "TOO ",
+      "items": [
+        {
+          "name": "Греца",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 1320000
+        },
+        {
+          "name": "Масло подсолнечное",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 74.31,
+    "device": "CPU",
+    "image_sha256": "22587d1ada7341174d3383ac900f10c61f62a40f7d13b5c6c373b84fb9457d97",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 199
+    },
+    "finished_at_utc": "2026-10-19T19:36:40.648752+00:00",
+    "doc_id": "inv02_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"Shalkar Logistic LLP\",\n  \"seller_bin\": \"376583942701\",\n  \"buyer_name\": \"Narynkol Trade LLP\",\n  \"items\": [\n    {\n      \"name\": \"Buckwheat, 25 kg\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Sunflower oil, 5 L\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+    "pred": {
+      "invoice_number": "5149",
+      "date": "2026-09-14",
+      "seller_name": "Shalkar Logistic LLP",
+      "seller_bin": "376583942701",
+      "buyer_name": "Narynkol Trade LLP",
+      "items": [
+        {
+          "name": "Buckwheat, 25 kg",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 1320000
+        },
+        {
+          "name": "Sunflower oil, 5 L",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 17.96,
+    "device": "CPU",
+    "image_sha256": "3a37c68b9e59a7c0652cd900715f1ca81978f36fcdc31ed0a394b8e23365667a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 190
+    },
+    "finished_at_utc": "2026-10-19T19:36:58.626325+00:00",
+    "doc_id": "inv02_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"Shakkar Logistic LLP\",\n  \"seller_bin\": \"376583942701\",\n  \"buyer_name\": \"Narynikol Trade LLP\",\n  \"items\": [\n    {\n      \"name\": \"Buckwheat\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Sunflower oil\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+    "pred": {
+      "invoice_number": "5149",
+      "date": "2026-09-14",
+      "seller_name": "Shakkar Logistic LLP",
+      "seller_bin": "376583942701",
+      "buyer_name": "Narynikol Trade LLP",
+      "items": [
+        {
+          "name": "Buckwheat",
+          "qty": 75,
+          "unit_price": 17600,
+          "amount": 1320000
+        },
+        {
+          "name": "Sunflower oil",
+          "qty": 145,
+          "unit_price": 3300,
+          "amount": 478500
+        }
+      ],
+      "total": 1798500
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 74.76,
+    "device": "CPU",
+    "image_sha256": "42d202004462a5495b4aa1ff9a44d9f6b19fde3b4b4aa0883a2d1ed93eebd677",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 234
+    },
+    "finished_at_utc": "2026-10-19T19:38:13.407031+00:00",
+    "doc_id": "inv03_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"2309\",\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"Арай Маркет\",\n  \"seller_bin\": \"506780056288\",\n  \"buyer_name\": \"Шалкар Логистик\",\n  \"items\": [\n    {\n      \"name\": \"Шай\",\n      \"qty\": 15,\n      \"unit_price\": 940,\n      \"amount\": 14100\n    },\n    {\n      \"name\": \"Жумыртка\",\n      \"qty\": 15,\n      \"unit_price\": 1900,\n      \"amount\": 28500\n    },\n    {\n      \"name\": \"Ірімшік\",\n      \"qty\": 50,\n      \"unit_price\": 3750,\n      \"amount\": 187500\n    }\n  ],\n  \"total\": 230100\n}\n```",
+    "pred": {
+      "invoice_number": "2309",
+      "date": "20.09.2026",
+      "seller_name": "Арай Маркет",
+      "seller_bin": "506780056288",
+      "buyer_name": "Шалкар Логистик",
+      "items": [
+        {
+          "name": "Шай",
+          "qty": 15,
+          "unit_price": 940,
+          "amount": 14100
+        },
+        {
+          "name": "Жумыртка",
+          "qty": 15,
+          "unit_price": 1900,
+          "amount": 28500
+        },
+        {
+          "name": "Ірімшік",
+          "qty": 50,
+          "unit_price": 3750,
+          "amount": 187500
+        }
+      ],
+      "total": 230100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 39.72,
+    "device": "CPU",
+    "image_sha256": "c8c77e6a113179e0575b7e77342ec327c376674096f0e79ec9da604bca891970",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 512
+    },
+    "finished_at_utc": "2026-10-19T19:38:53.162998+00:00",
+    "doc_id": "inv03_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"2309\",\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"Арал Маркет ЖХСС\",\n  \"seller_bin\": \"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "pred": null,
+    "strict": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 84.11,
+    "device": "CPU",
+    "image_sha256": "c5bb48e27da7d0c3daf5c6e0d483bb703fe88e94aa5261379f0aeb8e25ac076f",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 252
+    },
+    "finished_at_utc": "2026-10-19T19:40:17.307980+00:00",
+    "doc_id": "inv03_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": 2309,\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"TOO «Арай Маркет»\",\n  \"seller_bin\": \"506780056288\",\n  \"buyer_name\": \"TOO «Шалкар Логистик»\",\n  \"items\": [\n    {\n      \"name\": \"Чай, 100 г\",\n      \"qty\": 15,\n      \"unit_price\": 940,\n      \"amount\": 14100\n    },\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 15,\n      \"unit_price\": 1900,\n      \"amount\": 28500\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 50,\n      \"unit_price\": 3750,\n      \"amount\": 187500\n    }\n  ],\n  \"total\": 230100\n}\n```",
+    "pred": {
+      "invoice_number": 2309,
+      "date": "20.09.2026",
+      "seller_name": "TOO «Арай Маркет»",
+      "seller_bin": "506780056288",
+      "buyer_name": "TOO «Шалкар Логистик»",
+      "items": [
+        {
+          "name": "Чай, 100 г",
+          "qty": 15,
+          "unit_price": 940,
+          "amount": 14100
+        },
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 15,
+          "unit_price": 1900,
+          "amount": 28500
+        },
+        {
+          "name": "Сыр, 1 кг",
+          "qty": 50,
+          "unit_price": 3750,
+          "amount": 187500
+        }
+      ],
+      "total": 230100
+    },
+    "strict": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": false,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 21.84,
+    "device": "CPU",
+    "image_sha256": "26f403c173414d6a29c332c02e4933adf41e7c00693bca496a082701319b47a9",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 238
+    },
+    "finished_at_utc": "2026-10-19T19:40:39.166628+00:00",
+    "doc_id": "inv03_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"2309\",\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"TOO \"Aray Market\",\n  \"seller_bin\": \"50678006288\",\n  \"buyer_name\": \"TOO \"Shalar Logistics\",\n  \"items\": [\n    {\n      \"name\": \"Чай, 100 г\",\n      \"qty\": 15,\n      \"unit_price\": 940,\n      \"amount\": 14100\n    },\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 15,\n      \"unit_price\": 1900,\n      \"amount\": 28500\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 50,\n      \"unit_price\": 3750,\n      \"amount\": 187500\n    }\n  ],\n  \"total\": 230100\n}",
+    "pred": null,
+    "strict": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": false,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 78.85,
+    "device": "CPU",
+    "image_sha256": "8d82294f98c0d043fb76f53bf40e69eff98e5fca75ecfed245e922c816fae213",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 237
+    },
+    "finished_at_utc": "2026-10-19T19:41:58.037770+00:00",
+    "doc_id": "inv03_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"2309\",\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"Arai Market LLP\",\n  \"seller_bin\": \"506780056288\",\n  \"buyer_name\": \"Shalkar Logistic LLP\",\n  \"items\": [\n    {\n      \"name\": \"Tea, 100 g\",\n      \"qty\": 15,\n      \"unit_price\": 940,\n      \"amount\": 14100\n    },\n    {\n      \"name\": \"Eggs, 30 pcs\",\n      \"qty\": 15,\n      \"unit_price\": 1900,\n      \"amount\": 28500\n    },\n    {\n      \"name\": \"Cheese, 1 kg\",\n      \"qty\": 50,\n      \"unit_price\": 3750,\n      \"amount\": 187500\n    }\n  ],\n  \"total\": 230100\n}\n```",
+    "pred": {
+      "invoice_number": "2309",
+      "date": "20.09.2026",
+      "seller_name": "Arai Market LLP",
+      "seller_bin": "506780056288",
+      "buyer_name": "Shalkar Logistic LLP",
+      "items": [
+        {
+          "name": "Tea, 100 g",
+          "qty": 15,
+          "unit_price": 940,
+          "amount": 14100
+        },
+        {
+          "name": "Eggs, 30 pcs",
+          "qty": 15,
+          "unit_price": 1900,
+          "amount": 28500
+        },
+        {
+          "name": "Cheese, 1 kg",
+          "qty": 50,
+          "unit_price": 3750,
+          "amount": 187500
+        }
+      ],
+      "total": 230100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 20.9,
+    "device": "CPU",
+    "image_sha256": "79c3c2c23b791f81e4bb1745c0979d5bc0537f812bda4de51c7c620c0cdee095",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 220
+    },
+    "finished_at_utc": "2026-10-19T19:42:18.976109+00:00",
+    "doc_id": "inv03_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"2309\",\n  \"date\": \"20.09.2026\",\n  \"seller_name\": \"Arisi Market LLP\",\n  \"seller_bin\": \"506780056288\",\n  \"buyer_name\": \"Shalkar Logistic LLP\",\n  \"items\": [\n    {\n      \"name\": \"Tax\",\n      \"qty\": 15,\n      \"unit_price\": 940,\n      \"amount\": 14100\n    },\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 30,\n      \"unit_price\": 1900,\n      \"amount\": 28500\n    },\n    {\n      \"name\": \"Cheese\",\n      \"qty\": 50,\n      \"unit_price\": 3750,\n      \"amount\": 18750\n    }\n  ],\n  \"total\": 230100\n}\n```",
+    "pred": {
+      "invoice_number": "2309",
+      "date": "20.09.2026",
+      "seller_name": "Arisi Market LLP",
+      "seller_bin": "506780056288",
+      "buyer_name": "Shalkar Logistic LLP",
+      "items": [
+        {
+          "name": "Tax",
+          "qty": 15,
+          "unit_price": 940,
+          "amount": 14100
+        },
+        {
+          "name": "Eggs",
+          "qty": 30,
+          "unit_price": 1900,
+          "amount": 28500
+        },
+        {
+          "name": "Cheese",
+          "qty": 50,
+          "unit_price": 3750,
+          "amount": 18750
+        }
+      ],
+      "total": 230100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 78.8,
+    "device": "CPU",
+    "image_sha256": "20dc437ea729f09116bd1875f21045f4f74482404c8dcfe59c0ca0e6c8dc0f17",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 235
+    },
+    "finished_at_utc": "2026-10-19T19:43:37.826129+00:00",
+    "doc_id": "inv04_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"02.10.2026\",\n  \"seller_name\": \"Арай Маркет\",\n  \"seller_bin\": \"385721207795\",\n  \"buyer_name\": \"Ерейментау Агро\",\n  \"items\": [\n    {\n      \"name\": \"Кунбағыс майы\",\n      \"qty\": 5,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Сөбіз\",\n      \"qty\": 10,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Сүт\",\n      \"qty\": 1,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}\n```",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "02.10.2026",
+      "seller_name": "Арай Маркет",
+      "seller_bin": "385721207795",
+      "buyer_name": "Ерейментау Агро",
+      "items": [
+        {
+          "name": "Кунбағыс майы",
+          "qty": 5,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Сөбіз",
+          "qty": 10,
+          "unit_price": 2350,
+          "amount": 47000
+        },
+        {
+          "name": "Сүт",
+          "qty": 1,
+          "unit_price": 470,
+          "amount": 61100
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 31.11,
+    "device": "CPU",
+    "image_sha256": "c85ae35d058dd970b3c72050488d1fcd517da34ef5303c201fefed1d27a3872a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 255
+    },
+    "finished_at_utc": "2026-10-19T19:44:08.958570+00:00",
+    "doc_id": "inv04_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"2026-10-02\",\n  \"seller_name\": \"Арал Маркет\",\n  \"seller_bin\": \"БСН: 385721207795\",\n  \"buyer_name\": \"Ердембайтаг\",\n  \"items\": [\n    {\n      \"name\": \"Кубанис майы, 5 п.\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Саба, 10 кг\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 470000\n    },\n    {\n      \"name\": \"Сут, 1 п.\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 611000\n    }\n  ],\n  \"total\": 396100\n}\n```",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "2026-10-02",
+      "seller_name": "Арал Маркет",
+      "seller_bin": "БСН: 385721207795",
+      "buyer_name": "Ердембайтаг",
+      "items": [
+        {
+          "name": "Кубанис майы, 5 п.",
+          "qty": 90,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Саба, 10 кг",
+          "qty": 20,
+          "unit_price": 2350,
+          "amount": 470000
+        },
+        {
+          "name": "Сут, 1 п.",
+          "qty": 130,
+          "unit_price": 470,
+          "amount": 611000
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 95.8,
+    "device": "CPU",
+    "image_sha256": "4e44fcb54adb50181bd8d216ef697c129321a286b214ae00c5392696884ce207",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 258
+    },
+    "finished_at_utc": "2026-10-19T19:45:44.781500+00:00",
+    "doc_id": "inv04_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"02.10.2026\",\n  \"seller_name\": \"TOO «Арай Маркет»\",\n  \"seller_bin\": \"385721207795\",\n  \"buyer_name\": \"TOO «Ерейментау Агро»\",\n  \"items\": [\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Морковь, 10 кг\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Молоко, 1 л\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}\n```",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "02.10.2026",
+      "seller_name": "TOO «Арай Маркет»",
+      "seller_bin": "385721207795",
+      "buyer_name": "TOO «Ерейментау Агро»",
+      "items": [
+        {
+          "name": "Масло подсолнечное, 5 л",
+          "qty": 90,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Морковь, 10 кг",
+          "qty": 20,
+          "unit_price": 2350,
+          "amount": 47000
+        },
+        {
+          "name": "Молоко, 1 л",
+          "qty": 130,
+          "unit_price": 470,
+          "amount": 61100
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 47.85,
+    "device": "CPU",
+    "image_sha256": "f743a77e5d25fab0e64a3510492293f98f2533f6275d523a8ec42259783855e0",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 232
+    },
+    "finished_at_utc": "2026-10-19T19:46:32.667370+00:00",
+    "doc_id": "inv04_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"9834\",\n  \"date\": \"2026-10-02\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Арей Маркет\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Марков, 10 кг\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Молоко, 1 л\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "2026-10-02",
+      "seller_name": "TOO ",
+      "seller_bin": "Арей Маркет",
+      "buyer_name": "TOO ",
+      "items": [
+        {
+          "name": "Масло подсолнечное, 5 л",
+          "qty": 90,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Марков, 10 кг",
+          "qty": 20,
+          "unit_price": 2350,
+          "amount": 47000
+        },
+        {
+          "name": "Молоко, 1 л",
+          "qty": 130,
+          "unit_price": 470,
+          "amount": 61100
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 110.24,
+    "device": "CPU",
+    "image_sha256": "e84ce86e4e2f9a69c78ad681bdd40dc268d9bfe59594a3b7ad6d55a871ad72fa",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 239
+    },
+    "finished_at_utc": "2026-10-19T19:48:22.945242+00:00",
+    "doc_id": "inv04_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"02.10.2026\",\n  \"seller_name\": \"Arai Market LLP\",\n  \"seller_bin\": \"385721207795\",\n  \"buyer_name\": \"Ereymentau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Sunflower oil, 5 L\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Carrots, 10 kg\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Milk, 1 L\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}\n```",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "02.10.2026",
+      "seller_name": "Arai Market LLP",
+      "seller_bin": "385721207795",
+      "buyer_name": "Ereymentau Agro LLP",
+      "items": [
+        {
+          "name": "Sunflower oil, 5 L",
+          "qty": 90,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Carrots, 10 kg",
+          "qty": 20,
+          "unit_price": 2350,
+          "amount": 47000
+        },
+        {
+          "name": "Milk, 1 L",
+          "qty": 130,
+          "unit_price": 470,
+          "amount": 61100
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 26.24,
+    "device": "CPU",
+    "image_sha256": "6f7d66fd91121ed0aadb71203ac893a525dc39767e1cb29668a60fd03ae26f4b",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 228
+    },
+    "finished_at_utc": "2026-10-19T19:48:49.281940+00:00",
+    "doc_id": "inv04_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"2026-10-02\",\n  \"seller_name\": \"Ansi Market LLP\",\n  \"seller_bin\": \"385721207795\",\n  \"buyer_name\": \"Ereymantau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Sunflower oil\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Camota\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 470000\n    },\n    {\n      \"name\": \"Milk\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 611000\n    }\n  ],\n  \"total\": 396100\n}\n```",
+    "pred": {
+      "invoice_number": "9834",
+      "date": "2026-10-02",
+      "seller_name": "Ansi Market LLP",
+      "seller_bin": "385721207795",
+      "buyer_name": "Ereymantau Agro LLP",
+      "items": [
+        {
+          "name": "Sunflower oil",
+          "qty": 90,
+          "unit_price": 3200,
+          "amount": 288000
+        },
+        {
+          "name": "Camota",
+          "qty": 20,
+          "unit_price": 2350,
+          "amount": 470000
+        },
+        {
+          "name": "Milk",
+          "qty": 130,
+          "unit_price": 470,
+          "amount": 611000
+        }
+      ],
+      "total": 396100
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 128.11,
+    "device": "CPU",
+    "image_sha256": "881075fd90e13db17fabec526c3dbd7112ace8c32f846193481be4b412868230",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 315
+    },
+    "finished_at_utc": "2026-10-19T19:50:57.427526+00:00",
+    "doc_id": "inv05_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Таң Нүры ЖШС\",\n  \"seller_bin\": \"628892634684\",\n  \"buyer_name\": \"Ерейментау Агро ЖШС\",\n  \"items\": [\n    {\n      \"name\": \"Жумыртка, 30 дана\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Түз, 1 кг\",\n      \"qty\": 135,\n      \"unit_price\": 140,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Бидай үны, 1-сорт, 50 кг\",\n      \"qty\": 115,\n      \"unit_price\": 14550,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Сут, 1 л\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "01.10.2026",
+      "seller_name": "Таң Нүры ЖШС",
+      "seller_bin": "628892634684",
+      "buyer_name": "Ерейментау Агро ЖШС",
+      "items": [
+        {
+          "name": "Жумыртка, 30 дана",
+          "qty": 40,
+          "unit_price": 2000,
+          "amount": 80000
+        },
+        {
+          "name": "Түз, 1 кг",
+          "qty": 135,
+          "unit_price": 140,
+          "amount": 18900
+        },
+        {
+          "name": "Бидай үны, 1-сорт, 50 кг",
+          "qty": 115,
+          "unit_price": 14550,
+          "amount": 1673250
+        },
+        {
+          "name": "Сут, 1 л",
+          "qty": 110,
+          "unit_price": 410,
+          "amount": 45100
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 32.03,
+    "device": "CPU",
+    "image_sha256": "bf6f6ab7d45f2733bda72fa23357c9d8957537c096cacf7668cfe6eb13707a3a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 280
+    },
+    "finished_at_utc": "2026-10-19T19:51:29.498508+00:00",
+    "doc_id": "inv05_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Тан Нуры ЖШСС\",\n  \"seller_bin\": \"BC68982634684\",\n  \"buyer_name\": \"Ердембайтаг Аргы ЖШСС\",\n  \"items\": [\n    {\n      \"name\": \"Жіліртта, 30 д.н.\",\n      \"qty\": 2000,\n      \"unit_price\": 80000\n    },\n    {\n      \"name\": \"Таік, 1 кг\",\n      \"qty\": 140,\n      \"unit_price\": 19800\n    },\n    {\n      \"name\": \"Бідай 1-сорт, 50 кг\",\n      \"qty\": 115,\n      \"unit_price\": 1673250\n    },\n    {\n      \"name\": \"Сут, 1 п.\",\n      \"qty\": 110,\n      \"unit_price\": 410\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "01.10.2026",
+      "seller_name": "Тан Нуры ЖШСС",
+      "seller_bin": "BC68982634684",
+      "buyer_name": "Ердембайтаг Аргы ЖШСС",
+      "items": [
+        {
+          "name": "Жіліртта, 30 д.н.",
+          "qty": 2000,
+          "unit_price": 80000
+        },
+        {
+          "name": "Таік, 1 кг",
+          "qty": 140,
+          "unit_price": 19800
+        },
+        {
+          "name": "Бідай 1-сорт, 50 кг",
+          "qty": 115,
+          "unit_price": 1673250
+        },
+        {
+          "name": "Сут, 1 п.",
+          "qty": 110,
+          "unit_price": 410
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": false,
+      "items.0.unit_price": false,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": false,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 81.05,
+    "device": "CPU",
+    "image_sha256": "861549aa2cdd4e22c85f2554f9233bd76af73b22f1e668e299bc0ee26f5351c0",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 312
+    },
+    "finished_at_utc": "2026-10-19T19:52:50.576148+00:00",
+    "doc_id": "inv05_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"TOO «Тан Нуры»\",\n  \"seller_bin\": \"628892634684\",\n  \"buyer_name\": \"TOO «Ерейментау Агро»\",\n  \"items\": [\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Соль, 1 кг\",\n      \"qty\": 135,\n      \"unit_price\": 140,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Мука пшеничная, 1 сорт, 50 кг\",\n      \"qty\": 115,\n      \"unit_price\": 14550,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Молоко, 1 л\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "01.10.2026",
+      "seller_name": "TOO «Тан Нуры»",
+      "seller_bin": "628892634684",
+      "buyer_name": "TOO «Ерейментау Агро»",
+      "items": [
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 40,
+          "unit_price": 2000,
+          "amount": 80000
+        },
+        {
+          "name": "Соль, 1 кг",
+          "qty": 135,
+          "unit_price": 140,
+          "amount": 18900
+        },
+        {
+          "name": "Мука пшеничная, 1 сорт, 50 кг",
+          "qty": 115,
+          "unit_price": 14550,
+          "amount": 1673250
+        },
+        {
+          "name": "Молоко, 1 л",
+          "qty": 110,
+          "unit_price": 410,
+          "amount": 45100
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 24.38,
+    "device": "CPU",
+    "image_sha256": "d5a121af7a24ae39842cb759f88a2a83eab0ca1380134d87bfabeb42908d1196",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 285
+    },
+    "finished_at_utc": "2026-10-19T19:53:14.995095+00:00",
+    "doc_id": "inv05_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Тан Нуры\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Сельс\",\n      \"qty\": 125,\n      \"unit_price\": 18900,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Мука пшеничная, 1 сорт, 50 кг\",\n      \"qty\": 115,\n      \"unit_price\": 14500,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Молоко, 1 л\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "01.10.2026",
+      "seller_name": "TOO ",
+      "seller_bin": "Тан Нуры",
+      "buyer_name": "TOO ",
+      "items": [
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 40,
+          "unit_price": 2000,
+          "amount": 80000
+        },
+        {
+          "name": "Сельс",
+          "qty": 125,
+          "unit_price": 18900,
+          "amount": 18900
+        },
+        {
+          "name": "Мука пшеничная, 1 сорт, 50 кг",
+          "qty": 115,
+          "unit_price": 14500,
+          "amount": 1673250
+        },
+        {
+          "name": "Молоко, 1 л",
+          "qty": 110,
+          "unit_price": 410,
+          "amount": 45100
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": false,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 82.8,
+    "device": "CPU",
+    "image_sha256": "9e8092a20157f29bd3f6e625b00ce6306f638e26e8fa63d8c07629c164261bdf",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 294
+    },
+    "finished_at_utc": "2026-10-19T19:54:37.814244+00:00",
+    "doc_id": "inv05_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Tan Nury LLP\",\n  \"seller_bin\": \"628892634684\",\n  \"buyer_name\": \"Ereymentau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Eggs, 30 pcs\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Salt, 1 kg\",\n      \"qty\": 135,\n      \"unit_price\": 140,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Wheat flour, grade 1, 50 kg\",\n      \"qty\": 115,\n      \"unit_price\": 14550,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Milk, 1 L\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "01.10.2026",
+      "seller_name": "Tan Nury LLP",
+      "seller_bin": "628892634684",
+      "buyer_name": "Ereymentau Agro LLP",
+      "items": [
+        {
+          "name": "Eggs, 30 pcs",
+          "qty": 40,
+          "unit_price": 2000,
+          "amount": 80000
+        },
+        {
+          "name": "Salt, 1 kg",
+          "qty": 135,
+          "unit_price": 140,
+          "amount": 18900
+        },
+        {
+          "name": "Wheat flour, grade 1, 50 kg",
+          "qty": 115,
+          "unit_price": 14550,
+          "amount": 1673250
+        },
+        {
+          "name": "Milk, 1 L",
+          "qty": 110,
+          "unit_price": 410,
+          "amount": 45100
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 42.05,
+    "device": "CPU",
+    "image_sha256": "b84f62ca2dc852c10f04e52a392fcdcdf8aa90a93123fd9756be9db5c6d51ce3",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 273
+    },
+    "finished_at_utc": "2026-10-19T19:55:19.983561+00:00",
+    "doc_id": "inv05_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"7036\",\n  \"date\": \"2026-10-01\",\n  \"seller_name\": \"Tan Nury LLP\",\n  \"seller_bin\": \"6288926348644\",\n  \"buyer_name\": \"Ereymetau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 40,\n      \"unit_price\": 2000,\n      \"amount\": 80000\n    },\n    {\n      \"name\": \"Salt\",\n      \"qty\": 125,\n      \"unit_price\": 140,\n      \"amount\": 18900\n    },\n    {\n      \"name\": \"Wheat flour\",\n      \"qty\": 115,\n      \"unit_price\": 14500,\n      \"amount\": 1673250\n    },\n    {\n      \"name\": \"Milk\",\n      \"qty\": 110,\n      \"unit_price\": 410,\n      \"amount\": 45100\n    }\n  ],\n  \"total\": 1817250\n}\n```",
+    "pred": {
+      "invoice_number": "7036",
+      "date": "2026-10-01",
+      "seller_name": "Tan Nury LLP",
+      "seller_bin": "6288926348644",
+      "buyer_name": "Ereymetau Agro LLP",
+      "items": [
+        {
+          "name": "Eggs",
+          "qty": 40,
+          "unit_price": 2000,
+          "amount": 80000
+        },
+        {
+          "name": "Salt",
+          "qty": 125,
+          "unit_price": 140,
+          "amount": 18900
+        },
+        {
+          "name": "Wheat flour",
+          "qty": 115,
+          "unit_price": 14500,
+          "amount": 1673250
+        },
+        {
+          "name": "Milk",
+          "qty": 110,
+          "unit_price": 410,
+          "amount": 45100
+        }
+      ],
+      "total": 1817250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": false,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 97.05,
+    "device": "CPU",
+    "image_sha256": "ca6ab23c1a69a02bd43b882bfe2e720daf08a44a33ffa93af8ba6eaf7899f4de",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 287
+    },
+    "finished_at_utc": "2026-10-19T19:56:57.059974+00:00",
+    "doc_id": "inv06_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Сарыарка Азық ЖШС\",\n  \"seller_bin\": \"574172756263\",\n  \"buyer_name\": \"Нарынқол Трейд ЖШС\",\n  \"items\": [\n    {\n      \"name\": \"Шай\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Кызылша\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Ірімшік\",\n      \"qty\": 65,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Түз\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "01.10.2026",
+      "seller_name": "Сарыарка Азық ЖШС",
+      "seller_bin": "574172756263",
+      "buyer_name": "Нарынқол Трейд ЖШС",
+      "items": [
+        {
+          "name": "Шай",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Кызылша",
+          "qty": 90,
+          "unit_price": 2000,
+          "amount": 180000
+        },
+        {
+          "name": "Ірімшік",
+          "qty": 65,
+          "unit_price": 4050,
+          "amount": 263250
+        },
+        {
+          "name": "Түз",
+          "qty": 50,
+          "unit_price": 150,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 27.85,
+    "device": "CPU",
+    "image_sha256": "bc7a6855daad2821207636c1c29bda6bc0dd7935db1c8bfe0134bd0b81a3801e",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 289
+    },
+    "finished_at_utc": "2026-10-19T19:57:24.938362+00:00",
+    "doc_id": "inv06_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Сарыарда Азиз ЖСС\",\n  \"seller_bin\": \"BCS:57417275626\",\n  \"buyer_name\": \"Нарынбек Трейд ЖСС\",\n  \"items\": [\n    {\n      \"name\": \"Шак\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Кызылвия\",\n      \"qty\": 2000,\n      \"unit_price\": 2000,\n      \"amount\": 1800000\n    },\n    {\n      \"name\": \"Иріз\",\n      \"qty\": 60,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Ту\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "01.10.2026",
+      "seller_name": "Сарыарда Азиз ЖСС",
+      "seller_bin": "BCS:57417275626",
+      "buyer_name": "Нарынбек Трейд ЖСС",
+      "items": [
+        {
+          "name": "Шак",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Кызылвия",
+          "qty": 2000,
+          "unit_price": 2000,
+          "amount": 1800000
+        },
+        {
+          "name": "Иріз",
+          "qty": 60,
+          "unit_price": 4050,
+          "amount": 263250
+        },
+        {
+          "name": "Ту",
+          "qty": 50,
+          "unit_price": 150,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 80.45,
+    "device": "CPU",
+    "image_sha256": "40f8431ba096447ace38b37a1806649e0a41bf6fb76d6ca58522e3f0580329f6",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 304
+    },
+    "finished_at_utc": "2026-10-19T19:58:45.424409+00:00",
+    "doc_id": "inv06_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"TOO «Сарыарка Азык»\",\n  \"seller_bin\": \"574172756263\",\n  \"buyer_name\": \"TOO «Нарынкол Трейд»\",\n  \"items\": [\n    {\n      \"name\": \"Чай, 100 г\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Свёкла, 10 кг\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 65,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Соль, 1 кг\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "01.10.2026",
+      "seller_name": "TOO «Сарыарка Азык»",
+      "seller_bin": "574172756263",
+      "buyer_name": "TOO «Нарынкол Трейд»",
+      "items": [
+        {
+          "name": "Чай, 100 г",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Свёкла, 10 кг",
+          "qty": 90,
+          "unit_price": 2000,
+          "amount": 180000
+        },
+        {
+          "name": "Сыр, 1 кг",
+          "qty": 65,
+          "unit_price": 4050,
+          "amount": 263250
+        },
+        {
+          "name": "Соль, 1 кг",
+          "qty": 50,
+          "unit_price": 150,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 27.84,
+    "device": "CPU",
+    "image_sha256": "1adade7ade236a35c03e56f23ee7a68cac2868cbf3c15900472129df1edfe5e1",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 282
+    },
+    "finished_at_utc": "2026-10-19T19:59:13.299007+00:00",
+    "doc_id": "inv06_ru",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Сарындар Азис\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Чай, 100 г\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Суровой, 10 кг\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Сыр, 1 кг\",\n      \"qty\": 60,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Соль, 1 кг\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "01.10.2026",
+      "seller_name": "TOO ",
+      "seller_bin": "Сарындар Азис",
+      "buyer_name": "TOO ",
+      "items": [
+        {
+          "name": "Чай, 100 г",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Суровой, 10 кг",
+          "qty": 90,
+          "unit_price": 2000,
+          "amount": 180000
+        },
+        {
+          "name": "Сыр, 1 кг",
+          "qty": 60,
+          "unit_price": 4050,
+          "amount": 263250
+        },
+        {
+          "name": "Соль, 1 кг",
+          "qty": 50,
+          "unit_price": 150,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 89.4,
+    "device": "CPU",
+    "image_sha256": "aafec072bb57b775c88d012e0ee6dbb98082008484c5b1034e9a59af7a85e953",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 288
+    },
+    "finished_at_utc": "2026-10-19T20:00:42.746266+00:00",
+    "doc_id": "inv06_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"574172756263\",\n  \"buyer_name\": \"Narynkol Trade LLP\",\n  \"items\": [\n    {\n      \"name\": \"Tea, 100 g\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Beetroot, 10 kg\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Cheese, 1 kg\",\n      \"qty\": 65,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Salt, 1 kg\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "01.10.2026",
+      "seller_name": "Saryarka Azyk LLP",
+      "seller_bin": "574172756263",
+      "buyer_name": "Narynkol Trade LLP",
+      "items": [
+        {
+          "name": "Tea, 100 g",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Beetroot, 10 kg",
+          "qty": 90,
+          "unit_price": 2000,
+          "amount": 180000
+        },
+        {
+          "name": "Cheese, 1 kg",
+          "qty": 65,
+          "unit_price": 4050,
+          "amount": 263250
+        },
+        {
+          "name": "Salt, 1 kg",
+          "qty": 50,
+          "unit_price": 150,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "items.3.name": true,
+      "items.3.qty": true,
+      "items.3.unit_price": true,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 26.03,
+    "device": "CPU",
+    "image_sha256": "be0f510fbfdb8e4380134e2ca8cbc6f31c2330a472302f11c7b58c9180c51316",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 271
+    },
+    "finished_at_utc": "2026-10-19T20:01:08.819970+00:00",
+    "doc_id": "inv06_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"2026-10-01\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"7574172756263\",\n  \"buyer_name\": \"Narynolik Trade LLP\",\n  \"items\": [\n    {\n      \"name\": \"Tax\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Beetroot\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Cheese\",\n      \"qty\": 65,\n      \"unit_price\": 4050,\n      \"amount\": 363250\n    },\n    {\n      \"name\": \"Salt\",\n      \"qty\": 50,\n      \"unit_price\": 1500,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+    "pred": {
+      "invoice_number": "8224",
+      "date": "2026-10-01",
+      "seller_name": "Saryarka Azyk LLP",
+      "seller_bin": "7574172756263",
+      "buyer_name": "Narynolik Trade LLP",
+      "items": [
+        {
+          "name": "Tax",
+          "qty": 115,
+          "unit_price": 980,
+          "amount": 112700
+        },
+        {
+          "name": "Beetroot",
+          "qty": 90,
+          "unit_price": 2000,
+          "amount": 180000
+        },
+        {
+          "name": "Cheese",
+          "qty": 65,
+          "unit_price": 4050,
+          "amount": 363250
+        },
+        {
+          "name": "Salt",
+          "qty": 50,
+          "unit_price": 1500,
+          "amount": 7500
+        }
+      ],
+      "total": 563450
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": false,
+      "items.3.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "items.3.name": false,
+      "items.3.qty": true,
+      "items.3.unit_price": false,
+      "items.3.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 88.07,
+    "device": "CPU",
+    "image_sha256": "9369e77bd26324bb4255426fee9b9519b33d96c14cf4b9855f3e2ecba4cc293b",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 276
+    },
+    "finished_at_utc": "2026-10-19T20:02:36.913553+00:00",
+    "doc_id": "inv07_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"2026-09-17\",\n  \"seller_name\": \"Сарыарка Азық ЖКС\",\n  \"seller_bin\": \"635550844927\",\n  \"buyer_name\": \"Казына Сауда ЖКС\",\n  \"items\": [\n    {\n      \"name\": \"Бидай ыны, 1-сорт, 50 кг\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Сиыр еті, 1 кг\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 303750\n    },\n    {\n      \"name\": \"Кант, 50 кг\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3262500\n    }\n  ],\n  \"total\": 5204250\n}\n```",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "2026-09-17",
+      "seller_name": "Сарыарка Азық ЖКС",
+      "seller_bin": "635550844927",
+      "buyer_name": "Казына Сауда ЖКС",
+      "items": [
+        {
+          "name": "Бидай ыны, 1-сорт, 50 кг",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 1638000
+        },
+        {
+          "name": "Сиыр еті, 1 кг",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 303750
+        },
+        {
+          "name": "Кант, 50 кг",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 3262500
+        }
+      ],
+      "total": 5204250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 27.63,
+    "device": "CPU",
+    "image_sha256": "d869729598e2f6686a7974ea36452a155703feb1204c8bcb3940bcf8cd6071fa",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 273
+    },
+    "finished_at_utc": "2026-10-19T20:03:04.590584+00:00",
+    "doc_id": "inv07_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"2026-09-17\",\n  \"seller_name\": \"Сарыардаг Азиз ЖСС\",\n  \"seller_bin\": \"BC3555044927\",\n  \"buyer_name\": \"Казима Сулуу ЖСС\",\n  \"items\": [\n    {\n      \"name\": \"Бидын 1-отт 50 кг\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Сизир 1-отт 1 кг\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 3073500\n    },\n    {\n      \"name\": \"Кент 50 кг\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3265000\n    }\n  ],\n  \"total\": 52024250\n}\n```",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "2026-09-17",
+      "seller_name": "Сарыардаг Азиз ЖСС",
+      "seller_bin": "BC3555044927",
+      "buyer_name": "Казима Сулуу ЖСС",
+      "items": [
+        {
+          "name": "Бидын 1-отт 50 кг",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 1638000
+        },
+        {
+          "name": "Сизир 1-отт 1 кг",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 3073500
+        },
+        {
+          "name": "Кент 50 кг",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 3265000
+        }
+      ],
+      "total": 52024250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": false
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": false
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 152.83,
+    "device": "CPU",
+    "image_sha256": "759d91062e771e2eac41598c6c29333abb94bccab31c9fe90ee9af0e00bb395c",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 276
+    },
+    "finished_at_utc": "2026-10-19T20:05:37.447353+00:00",
+    "doc_id": "inv07_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"17.09.2026\",\n  \"seller_name\": \"TOO «Сарыарка Азык»\",\n  \"seller_bin\": \"635550844927\",\n  \"buyer_name\": \"TOO «Казына Сауда»\",\n  \"items\": [\n    {\n      \"name\": \"Мука пшеничная, 1 сорт, 50 кг\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Говядина, 1 кг\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 303750\n    },\n    {\n      \"name\": \"Сахар, 50 кг\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3262500\n    }\n  ],\n  \"total\": 5204250\n}\n```",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "17.09.2026",
+      "seller_name": "TOO «Сарыарка Азык»",
+      "seller_bin": "635550844927",
+      "buyer_name": "TOO «Казына Сауда»",
+      "items": [
+        {
+          "name": "Мука пшеничная, 1 сорт, 50 кг",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 1638000
+        },
+        {
+          "name": "Говядина, 1 кг",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 303750
+        },
+        {
+          "name": "Сахар, 50 кг",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 3262500
+        }
+      ],
+      "total": 5204250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 46.97,
+    "device": "CPU",
+    "image_sha256": "9c9632767bf3652dfbf8a97d0f4398293fb65c786247811345d7a73724bf9301",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 267
+    },
+    "finished_at_utc": "2026-10-19T20:06:24.569170+00:00",
+    "doc_id": "inv07_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"3275\",\n  \"date\": \"17.09.2026\",\n  \"seller_name\": \"TOO «Сарыария Азису\",\n  \"seller_bin\": \"63555084927\",\n  \"buyer_name\": \"TOO «Казына Суура\",\n  \"items\": [\n    {\n      \"name\": \"мука пшеничная, 1 сорт, 50 кг\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 163800\n    },\n    {\n      \"name\": \"говядина, 1 кг\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 307350\n    },\n    {\n      \"name\": \"сахар, 50 кг\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 326250\n    }\n  ],\n  \"total\": 5204250\n}",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "17.09.2026",
+      "seller_name": "TOO «Сарыария Азису",
+      "seller_bin": "63555084927",
+      "buyer_name": "TOO «Казына Суура",
+      "items": [
+        {
+          "name": "мука пшеничная, 1 сорт, 50 кг",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 163800
+        },
+        {
+          "name": "говядина, 1 кг",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 307350
+        },
+        {
+          "name": "сахар, 50 кг",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 326250
+        }
+      ],
+      "total": 5204250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": false,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 122.93,
+    "device": "CPU",
+    "image_sha256": "5fa25ae273f1d2d0d77b59966f5f1879018f523cce4b87cced963e2d59ef2b3d",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 254
+    },
+    "finished_at_utc": "2026-10-19T20:08:27.548366+00:00",
+    "doc_id": "inv07_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"2026-09-17\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"635550844927\",\n  \"buyer_name\": \"Kazyna Sauda LLP\",\n  \"items\": [\n    {\n      \"name\": \"Wheat flour, grade 1, 50 kg\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Beef, 1 kg\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 303750\n    },\n    {\n      \"name\": \"Sugar, 50 kg\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3262500\n    }\n  ],\n  \"total\": 5204250\n}\n```",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "2026-09-17",
+      "seller_name": "Saryarka Azyk LLP",
+      "seller_bin": "635550844927",
+      "buyer_name": "Kazyna Sauda LLP",
+      "items": [
+        {
+          "name": "Wheat flour, grade 1, 50 kg",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 1638000
+        },
+        {
+          "name": "Beef, 1 kg",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 303750
+        },
+        {
+          "name": "Sugar, 50 kg",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 3262500
+        }
+      ],
+      "total": 5204250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 33.5,
+    "device": "CPU",
+    "image_sha256": "a4d13218f6eb26ffbddf908780a68d148ba67839982e3ccfb8879b8572a76ead",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 255
+    },
+    "finished_at_utc": "2026-10-19T20:09:01.089976+00:00",
+    "doc_id": "inv07_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"2026-09-17\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"635500844927\",\n  \"buyer_name\": \"Kazyna Sauda LLP\",\n  \"items\": [\n    {\n      \"name\": \"Wheat four, grade 1, 50 kg\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Beef, 1 kg\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 3073500\n    },\n    {\n      \"name\": \"Sugar, 50 kg\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3262500\n    }\n  ],\n  \"total\": 5204250\n}\n```",
+    "pred": {
+      "invoice_number": "3275",
+      "date": "2026-09-17",
+      "seller_name": "Saryarka Azyk LLP",
+      "seller_bin": "635500844927",
+      "buyer_name": "Kazyna Sauda LLP",
+      "items": [
+        {
+          "name": "Wheat four, grade 1, 50 kg",
+          "qty": 105,
+          "unit_price": 15600,
+          "amount": 1638000
+        },
+        {
+          "name": "Beef, 1 kg",
+          "qty": 75,
+          "unit_price": 4050,
+          "amount": 3073500
+        },
+        {
+          "name": "Sugar, 50 kg",
+          "qty": 150,
+          "unit_price": 21750,
+          "amount": 3262500
+        }
+      ],
+      "total": 5204250
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": false,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": false,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 106.4,
+    "device": "CPU",
+    "image_sha256": "4450d2c57482c1e646e8b60e26d1d4032c99568185fd7a5df800d5991c4e9254",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 261
+    },
+    "finished_at_utc": "2026-10-19T20:10:47.532437+00:00",
+    "doc_id": "inv08_kk",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"1612\",\n  \"date\": \"2026-09-29\",\n  \"seller_name\": \"Ерейментау Агро\",\n  \"seller_bin\": \"БСН: 888939678427\",\n  \"buyer_name\": \"Бекейхан Фуд\",\n  \"items\": [\n    {\n      \"name\": \"Түз, 1 кг\",\n      \"qty\": 110,\n      \"unit_price\": 160,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Сөбіз, 10 кг\",\n      \"qty\": 135,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Жумыртқа, 30 дана\",\n      \"qty\": 75,\n      \"unit_price\": 2050,\n      \"amount\": 153750\n    }\n  ],\n  \"total\": 481850\n}\n```",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "2026-09-29",
+      "seller_name": "Ерейментау Агро",
+      "seller_bin": "БСН: 888939678427",
+      "buyer_name": "Бекейхан Фуд",
+      "items": [
+        {
+          "name": "Түз, 1 кг",
+          "qty": 110,
+          "unit_price": 160,
+          "amount": 17600
+        },
+        {
+          "name": "Сөбіз, 10 кг",
+          "qty": 135,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Жумыртқа, 30 дана",
+          "qty": 75,
+          "unit_price": 2050,
+          "amount": 153750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 33.29,
+    "device": "CPU",
+    "image_sha256": "7000449d524cc06eb5af125878d0fc89b7541e023b1482c59e0fdf1e67f4989a",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 244
+    },
+    "finished_at_utc": "2026-10-19T20:11:20.854171+00:00",
+    "doc_id": "inv08_kk",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"1612\",\n  \"date\": \"2026-09-29\",\n  \"seller_name\": \"Ерөнбайтая Агрон ЖШС\",\n  \"seller_bin\": \"88893967842\",\n  \"buyer_name\": \"Бекейман Фуд ЖШС\",\n  \"items\": [\n    {\n      \"name\": \"Туш\",\n      \"qty\": 110,\n      \"unit_price\": 180,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Себа\",\n      \"qty\": 185,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Жырмұртта\",\n      \"qty\": 30,\n      \"unit_price\": 2050,\n      \"amount\": 415750\n    }\n  ],\n  \"total\": 481850\n}\n```",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "2026-09-29",
+      "seller_name": "Ерөнбайтая Агрон ЖШС",
+      "seller_bin": "88893967842",
+      "buyer_name": "Бекейман Фуд ЖШС",
+      "items": [
+        {
+          "name": "Туш",
+          "qty": 110,
+          "unit_price": 180,
+          "amount": 17600
+        },
+        {
+          "name": "Себа",
+          "qty": 185,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Жырмұртта",
+          "qty": 30,
+          "unit_price": 2050,
+          "amount": 415750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": false,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 109.67,
+    "device": "CPU",
+    "image_sha256": "2782e1c0d6ec26610542e17c1d2bd09c4cd57b17aaa0cc6f66272bee8ee08a02",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 258
+    },
+    "finished_at_utc": "2026-10-19T20:13:10.559217+00:00",
+    "doc_id": "inv08_ru",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"1612\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"TOO «Ерейментау Агро»\",\n  \"seller_bin\": \"888939678427\",\n  \"buyer_name\": \"TOO «Бокейхан Фуд»\",\n  \"items\": [\n    {\n      \"name\": \"Соль, 1 кг\",\n      \"qty\": 110,\n      \"unit_price\": 160,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Морковь, 10 кг\",\n      \"qty\": 135,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Яйца, 30 шт\",\n      \"qty\": 75,\n      \"unit_price\": 2050,\n      \"amount\": 153750\n    }\n  ],\n  \"total\": 481850\n}\n```",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "29.09.2026",
+      "seller_name": "TOO «Ерейментау Агро»",
+      "seller_bin": "888939678427",
+      "buyer_name": "TOO «Бокейхан Фуд»",
+      "items": [
+        {
+          "name": "Соль, 1 кг",
+          "qty": 110,
+          "unit_price": 160,
+          "amount": 17600
+        },
+        {
+          "name": "Морковь, 10 кг",
+          "qty": 135,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Яйца, 30 шт",
+          "qty": 75,
+          "unit_price": 2050,
+          "amount": 153750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": true,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": true,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": true,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 24.42,
+    "device": "CPU",
+    "image_sha256": "b0e036e929c6ec9a7888cf0978695fc39e22fdf386da6778ad5aa149cea5e056",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 237
+    },
+    "finished_at_utc": "2026-10-19T20:13:35.010843+00:00",
+    "doc_id": "inv08_ru",
+    "condition": "degraded",
+    "raw": "{\n  \"invoice_number\": \"1612\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"TOO «Ерекеңтүү Арго»\",\n  \"seller_bin\": \"888939678427\",\n  \"buyer_name\": \"TOO «Бокейхан Фуд»\",\n  \"items\": [\n    {\n      \"name\": \"Соль\",\n      \"qty\": 110,\n      \"unit_price\": 180,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Мерев\",\n      \"qty\": 10,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Яйца\",\n      \"qty\": 30,\n      \"unit_price\": 2050,\n      \"amount\": 513750\n    }\n  ],\n  \"total\": 481850\n}",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "29.09.2026",
+      "seller_name": "TOO «Ерекеңтүү Арго»",
+      "seller_bin": "888939678427",
+      "buyer_name": "TOO «Бокейхан Фуд»",
+      "items": [
+        {
+          "name": "Соль",
+          "qty": 110,
+          "unit_price": 180,
+          "amount": 17600
+        },
+        {
+          "name": "Мерев",
+          "qty": 10,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Яйца",
+          "qty": 30,
+          "unit_price": 2050,
+          "amount": 513750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": false,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": false,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": false
+    }
+  },
+  {
+    "seconds": 98.5,
+    "device": "CPU",
+    "image_sha256": "3ef8fb652331cc3bb31e2a14e6d33744974d110a52eaff3cfe90fc8eca706c54",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 1129,
+      "generated_tokens": 229
+    },
+    "finished_at_utc": "2026-10-19T20:15:13.535765+00:00",
+    "doc_id": "inv08_en",
+    "condition": "clean",
+    "raw": "```json\n{\n  \"invoice_number\": \"1612\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"Ereymentau Agro LLP\",\n  \"seller_bin\": \"888939678427\",\n  \"buyer_name\": \"Bokeikhan Food LLP\",\n  \"items\": [\n    {\n      \"name\": \"Salt\",\n      \"qty\": 110,\n      \"unit_price\": 160,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Carrots\",\n      \"qty\": 135,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 75,\n      \"unit_price\": 2050,\n      \"amount\": 153750\n    }\n  ],\n  \"total\": 481850\n}\n```",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "29.09.2026",
+      "seller_name": "Ereymentau Agro LLP",
+      "seller_bin": "888939678427",
+      "buyer_name": "Bokeikhan Food LLP",
+      "items": [
+        {
+          "name": "Salt",
+          "qty": 110,
+          "unit_price": 160,
+          "amount": 17600
+        },
+        {
+          "name": "Carrots",
+          "qty": 135,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Eggs",
+          "qty": 75,
+          "unit_price": 2050,
+          "amount": 153750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": true,
+      "seller_bin": true,
+      "buyer_name": true,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": true,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": true,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": true,
+      "total_ok": true
+    }
+  },
+  {
+    "seconds": 28.93,
+    "device": "CPU",
+    "image_sha256": "ecacf725741925b0fddab9bf8c10af30c2e8a9ae8b59e41a1fa81c076b629046",
+    "prompt_sha256": "64e33f09d3d40084b97e4f53cbd434236f444f89b0e57441f64eba3eec542fe3",
+    "metrics": {
+      "input_tokens": 252,
+      "generated_tokens": 229
+    },
+    "finished_at_utc": "2026-10-19T20:15:42.498035+00:00",
+    "doc_id": "inv08_en",
+    "condition": "degraded",
+    "raw": "```json\n{\n  \"invoice_number\": \"1612\",\n  \"date\": \"29.09.2026\",\n  \"seller_name\": \"Ereymantau Agro LLP\",\n  \"seller_bin\": \"888939678427\",\n  \"buyer_name\": \"Bokeishan Food LLP\",\n  \"items\": [\n    {\n      \"name\": \"Salt\",\n      \"qty\": 110,\n      \"unit_price\": 180,\n      \"amount\": 17600\n    },\n    {\n      \"name\": \"Camota\",\n      \"qty\": 135,\n      \"unit_price\": 2300,\n      \"amount\": 310500\n    },\n    {\n      \"name\": \"Eggs\",\n      \"qty\": 70,\n      \"unit_price\": 2050,\n      \"amount\": 153750\n    }\n  ],\n  \"total\": 481850\n}\n```",
+    "pred": {
+      "invoice_number": "1612",
+      "date": "29.09.2026",
+      "seller_name": "Ereymantau Agro LLP",
+      "seller_bin": "888939678427",
+      "buyer_name": "Bokeishan Food LLP",
+      "items": [
+        {
+          "name": "Salt",
+          "qty": 110,
+          "unit_price": 180,
+          "amount": 17600
+        },
+        {
+          "name": "Camota",
+          "qty": 135,
+          "unit_price": 2300,
+          "amount": 310500
+        },
+        {
+          "name": "Eggs",
+          "qty": 70,
+          "unit_price": 2050,
+          "amount": 153750
+        }
+      ],
+      "total": 481850
+    },
+    "strict": {
+      "invoice_number": true,
+      "date": false,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "norm": {
+      "invoice_number": true,
+      "date": true,
+      "seller_name": false,
+      "seller_bin": true,
+      "buyer_name": false,
+      "items.0.name": false,
+      "items.0.qty": true,
+      "items.0.unit_price": false,
+      "items.0.amount": true,
+      "items.1.name": false,
+      "items.1.qty": true,
+      "items.1.unit_price": true,
+      "items.1.amount": true,
+      "items.2.name": false,
+      "items.2.qty": false,
+      "items.2.unit_price": true,
+      "items.2.amount": true,
+      "total": true
+    },
+    "arith": {
+      "rows_ok": false,
+      "total_ok": true
+    }
+  }
+]

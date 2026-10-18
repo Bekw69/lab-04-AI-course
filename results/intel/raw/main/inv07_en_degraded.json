@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv07_en",
+  "condition": "degraded",
+  "raw": "```json\n{\n  \"invoice_number\": \"3275\",\n  \"date\": \"2026-09-17\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"635500844927\",\n  \"buyer_name\": \"Kazyna Sauda LLP\",\n  \"items\": [\n    {\n      \"name\": \"Wheat four, grade 1, 50 kg\",\n      \"qty\": 105,\n      \"unit_price\": 15600,\n      \"amount\": 1638000\n    },\n    {\n      \"name\": \"Beef, 1 kg\",\n      \"qty\": 75,\n      \"unit_price\": 4050,\n      \"amount\": 3073500\n    },\n    {\n      \"name\": \"Sugar, 50 kg\",\n      \"qty\": 150,\n      \"unit_price\": 21750,\n      \"amount\": 3262500\n    }\n  ],\n  \"total\": 5204250\n}\n```",
+  "seconds": 33.5,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "a4d13218f6eb26ffbddf908780a68d148ba67839982e3ccfb8879b8572a76ead",
+  "finished_at_utc": "2026-10-19T20:09:01.070918+00:00"
+}

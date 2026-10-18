@@ -1,0 +1,22 @@
+{
+  "scope": "OCR only; Qwen and its dependent cells have not been executed locally.",
+  "tessdata_source": "https://github.com/tesseract-ocr/tessdata_fast/tree/4.1.0",
+  "tessdata_sha256": {
+    "kaz": "fcc01eed3815a42b9c6321c4c9d3606f39b166cbf95ade98b7d8d12063eae53d",
+    "rus": "e16e5e036cce1d9ec2b00063cf8b54472625b9e14d893a169e2b0dedeb4df225",
+    "eng": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+  },
+  "platform": "Windows-11-10.0.26100-SP0",
+  "manifest_sha256": "65b333632453626305e5084bb0af7c57a84509a9e56166babb778e2860675796",
+  "tesseract": "5.5.3.20260724",
+  "pytesseract": "0.3.13",
+  "python": "3.13.2",
+  "recorded_at_utc": "2026-10-19T15:32:09.569349+00:00",
+  "images_per_mode": 48,
+  "modes": [
+    3,
+    4,
+    6,
+    11
+  ]
+}

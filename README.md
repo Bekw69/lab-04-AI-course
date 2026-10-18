@@ -1,5 +1,7 @@
 # Lab 04 — Invoice to JSON
 
+> **Локальная сдача завершена на Intel CPU / OpenVINO (INT4/INT8, FP32).** Ноутбук содержит фактические выводы; инструкция и собственные результаты — в разделе «Решение в этой рабочей копии» ниже. Разделы Expect описывают отдельный эталон преподавателя. NVIDIA для локальной сдачи не требуется.
+
 Lab session in week 6 (Canvas Assignment 4); content maps to week 5, Multimodal and Image
 Generation (Lecture 5.1) — the course is running one week behind its official calendar ·
 Narxoz University
@@ -181,11 +183,117 @@ task 4, where a text that already contains the letters moved the same 42 fields 
 
 | File | What it is |
 |---|---|
-| `lab04_invoice_to_json.ipynb` | The lab: 28 cells, Parts 0–4, five ✏️ prompts, no outputs saved |
-| `lab04_core.py` | The toolbox, pasted unchanged into one notebook cell |
-| `data/` | 24 invoices × clean/degraded, `truth/` answer files, `manifest.json` (1.7 MB) |
-| `make_invoices.py` | Generates `data/` (seeded, deterministic) |
-| `README.md` | This file |
+| `lab04_invoice_to_json.ipynb` | 39 cells, 22 executed code cells; Parts 0–4, five answers, Core 1–3 and Advanced 5; actual saved outputs |
+| `lab04_core.py` | Toolbox; scoring logic unchanged, Intel/OpenVINO dispatch added; embedded unchanged |
+| `data/` | Original 24 invoices × clean/degraded, truth files and manifest |
+| `lab04_intel.py`, `requirements-intel.txt` | Fixed-revision OpenVINO INT4/INT8 model and isolated runtime |
+| `run_intel.py`, `lab04_batch.py`, `lab04_checkpoint.py` | Single-worker, atomic, resumable 48 + 16 image inference |
+| `lab04_report.py`, `lab04_analysis.py` | Short hand-in and complete tables calculated from measured records; embedded unchanged |
+| `finalize_lab04.py`, `make_submission_pdf.py` | Rebuild measured reports and the one-page PDF |
+| `results/intel/` | Raw model responses, parsed JSON, scores, arithmetic, OCR caches, environment, logs and reports |
+| `output/pdf/lab04_submission.pdf` | One-page report for submission |
+| `verify_submission.py` | Independent rescoring, hashes, embedded-source parity and complete-notebook checks |
+| `tests/` | 21 model-free tests of reports, checkpoint recovery/locking and device selection |
+| `make_invoices.py` | Original deterministic invoice generator |
+
+## Решение в этой рабочей копии
+
+Завершены собственный основной VLM-прогон на **48 изображениях** и отдельный эксперимент
+на **16 казахских изображениях**. В ноутбуке сохранены фактические выводы всех 22 code-ячеек,
+ответы на пять ✏️-заданий, Core 1–3 и Advanced 5. Ожидания честно обозначены как
+сформулированные после чтения README, до собственного прогона; это не слепые прогнозы.
+Эталонные числа из разделов Expect не подставлялись в измерения.
+
+Основной опыт: `Qwen/Qwen2-VL-2B-Instruct`, экспорт
+`helenai/Qwen2-VL-2B-Instruct-ov-int4`, ревизия
+`3264f1a456ab58768dbeb514dcb348e4af16c392`.
+Веса **INT4** для языковой части и **INT8** для vision/embeddings;
+CPU `INFERENCE_PRECISION_HINT=f32` (**FP32**). Greedy, max_new_tokens=512.
+Это отдельный квантизованный опыт: runtime и точность отличаются от float16-эталона преподавателя.
+Истинные значения использовались только для последующего оценивания.
+
+
+Окружение: 12th Gen Intel(R) Core(TM) i5-1235U, OpenVINO 2026.4.1, GenAI 2026.4.1.0, Python 3.13.2, Windows-11-10.0.26100-SP0.
+
+
+| Скан | OCR upper bound; 95% Wilson | VLM normalised; 95% Wilson |
+|---|---|---|
+| clean | 426/456; 93.4% [90.8; 95.4] | 386/456; 84.6% [81.1; 87.7] |
+| degraded | 3/456; 0.7% [0.2; 1.9] | 248/456; 54.4% [49.8; 58.9] |
+
+Полные таблицы по языкам, качеству и типам полей, strict/normalised, ошибки JSON,
+Unicode-замены букв, арифметика и дополнительный опыт: `results/intel/analysis.md`.
+Краткий отчёт: `results/intel/submission.md`; одностраничная версия: `output/pdf/lab04_submission.pdf`.
+Wilson-интервалы описательные: поля и переводы одного документа зависимы.
+OCR upper bound — присутствие значения в тексте, а не полноценный парсер полей и строк.
+
+OCR выполнен на всех 48 изображениях в четырёх режимах. Использованы сохранённые
+измерения Tesseract 5.5.3.20260724, `tessdata_fast` 4.1.0, `kaz+rus+eng`.
+
+| PSM | Clean, полей из 456 | Degraded, полей из 456 |
+|---|---:|---:|
+| 3 | 426 | 5 |
+| 4 | 426 | 3 |
+| 6 | 195 | 35 |
+| 11 | 440 | 33 |
+
+### Сохранённые измерения
+
+- `results/intel/vlm.json` — 48 исходных ответов, разобранные объекты, strict/normalised по каждому полю, арифметика и время;
+- `results/intel/vlm_kk_letters.json` — 16 ответов с инструкцией сохранять казахские буквы;
+- `results/intel/raw/main/`, `raw/letters/` — отдельный атомарный журнал каждого ответа;
+- `run_config.json`, `environment.json`, `ocr_environment.json` — точные промпты, ревизия, версии, CPU, точность, время и хеши;
+- `run_log.jsonl` — фактический ход вычислений;
+- `metrics_summary.json`, `analysis.md`, `submission.md` — измеренные сводные результаты и выводы;
+- `ocr_psm3.json`, `ocr_psm4.json`, `ocr_psm6.json`, `ocr_psm11.json` — исходный OCR-текст и оценки;
+- `verification.txt` — результаты финальных проверок;
+- `lab04_intel_results.zip` — комплект ноутбука, отчётов и результатов без весов и временных файлов.
+
+### Запуск и возобновление на Intel
+
+Проверенное окружение `.tools/intel-venv` уже подготовлено. Для новой установки:
+
+```powershell
+python -m venv .tools/intel-venv
+.\.tools\intel-venv\Scripts\python.exe -m pip install -r requirements-intel.txt
+```
+
+Основной и дополнительный прогоны в одном процессе:
+
+```powershell
+.\.tools\intel-venv\Scripts\python.exe -X utf8 -u run_intel.py --device CPU --all --letters
+```
+
+Каждый ответ сначала сохраняется отдельно, затем оценивается. При повторном запуске
+проверенные готовые изображения пропускаются, а ответ из raw-журнала восстанавливается
+без повторной генерации. Блокировка ОС исключает второй worker. Фиксируется конфигурация:
+смешать чекпойнты разных промптов, весов или версий нельзя.
+
+`--device AUTO` на данной Iris Xe выбирает проверенный CPU. Контроль GPU с драйвером
+32.0.101.5542 дал неверные ответы, а GPU FP32 завершился ошибкой отсутствующего ядра;
+явный `--device GPU` для Iris сообщает об этом. Это результат проверки данного компьютера,
+а не утверждение обо всех Intel GPU. NVIDIA для выбранного CPU-пути не нужна.
+
+### Ноутбук и Canvas
+
+`lab04_invoice_to_json.ipynb` уже содержит фактические выводы; его можно загружать в Canvas.
+При повторном исполнении в проверенном окружении он явно читает завершённые ответы
+из `results/intel/` и заново вычисляет таблицы. Тяжёлый прогон сделан worker-ом;
+повторная генерация в ячейках не заявляется. Для пересчёта нужен этот каталог результатов.
+В Colab без локального cache доступен независимый исходный PyTorch/T4-путь.
+GitHub → Colab до commit/push открывает опубликованную версию; для своих выводов
+загружайте локальный ноутбук.
+
+Проверки:
+
+```powershell
+python -X utf8 -m unittest discover -s tests -v
+python -X utf8 verify_submission.py --require-complete
+git diff --check
+```
+
+Никакой commit/push для этой итерации не выполнялся; существующая история не переписывалась.
+
 
 Instructor-side, not needed by students and kept in the instructor's course repository rather
 than in this one: `build_notebook.py` (generates the notebook),

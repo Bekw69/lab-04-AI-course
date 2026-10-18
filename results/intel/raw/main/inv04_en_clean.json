@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv04_en",
+  "condition": "clean",
+  "raw": "```json\n{\n  \"invoice_number\": \"9834\",\n  \"date\": \"02.10.2026\",\n  \"seller_name\": \"Arai Market LLP\",\n  \"seller_bin\": \"385721207795\",\n  \"buyer_name\": \"Ereymentau Agro LLP\",\n  \"items\": [\n    {\n      \"name\": \"Sunflower oil, 5 L\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Carrots, 10 kg\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Milk, 1 L\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}\n```",
+  "seconds": 110.24,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "e84ce86e4e2f9a69c78ad681bdd40dc268d9bfe59594a3b7ad6d55a871ad72fa",
+  "finished_at_utc": "2026-10-19T19:48:22.935073+00:00"
+}

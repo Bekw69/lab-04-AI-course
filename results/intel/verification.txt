@@ -1,0 +1,49 @@
+Final verification UTC 2026-10-19T20:39:24.814200+00:00
+$ C:\Users\Бекназар\AppData\Local\Programs\Python\Python313\python.exe -X utf8 -m unittest discover -s tests -v
+test_language_split_and_paired_letter_improvement (test_analysis.AnalysisTests.test_language_split_and_paired_letter_improvement) ... ok
+test_finished_raw_journal_recovers_without_model_call (test_checkpoint.CheckpointTests.test_finished_raw_journal_recovers_without_model_call) ... ok
+test_lock_prevents_a_second_worker (test_checkpoint.CheckpointTests.test_lock_prevents_a_second_worker) ... ok
+test_modified_score_is_rejected (test_checkpoint.CheckpointTests.test_modified_score_is_rejected) ... ok
+test_reload_keeps_the_measured_raw_answer (test_checkpoint.CheckpointTests.test_reload_keeps_the_measured_raw_answer) ... ok
+test_cpu_is_a_valid_fallback (test_devices.DeviceTests.test_cpu_is_a_valid_fallback) ... ok
+test_openvino_receives_the_same_prompt_and_hint_without_torch (test_devices.DeviceTests.test_openvino_receives_the_same_prompt_and_hint_without_torch) ... ok
+test_prefers_cuda_when_both_accelerators_exist (test_devices.DeviceTests.test_prefers_cuda_when_both_accelerators_exist) ... ok
+test_selects_intel_xpu_without_cuda (test_devices.DeviceTests.test_selects_intel_xpu_without_cuda) ... ok
+test_selects_mps_without_intel_support (test_devices.DeviceTests.test_selects_mps_without_intel_support) ... ok
+test_auto_iris_uses_validated_cpu (test_intel_policy.IntelPolicyTests.test_auto_iris_uses_validated_cpu) ... ok
+test_auto_other_gpu_remains_available (test_intel_policy.IntelPolicyTests.test_auto_other_gpu_remains_available) ... ok
+test_explicit_cpu_stays_cpu (test_intel_policy.IntelPolicyTests.test_explicit_cpu_stays_cpu) ... ok
+test_explicit_iris_gpu_explains_the_failed_control (test_intel_policy.IntelPolicyTests.test_explicit_iris_gpu_explains_the_failed_control) ... ok
+test_unavailable_gpu_is_not_reported_as_cpu_execution (test_intel_policy.IntelPolicyTests.test_unavailable_gpu_is_not_reported_as_cpu_execution) ... ok
+test_balanced_wrong_total_can_pass (test_report.ReportTests.test_balanced_wrong_total_can_pass) ... ok
+test_confusion_direction_is_truth_to_prediction (test_report.ReportTests.test_confusion_direction_is_truth_to_prediction) ... ok
+test_correct_total_with_bad_row_is_flagged (test_report.ReportTests.test_correct_total_with_bad_row_is_flagged) ... ok
+test_report_counts_are_measured (test_report.ReportTests.test_report_counts_are_measured) ... ok
+test_report_rejects_incomplete_measurements (test_report.ReportTests.test_report_rejects_incomplete_measurements) ... ok
+test_wilson_at_boundaries (test_report.ReportTests.test_wilson_at_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.069s
+
+OK
+Exit code: 0
+
+$ C:\Users\Бекназар\AppData\Local\Programs\Python\Python313\python.exe -X utf8 verify_submission.py --require-complete
+Data: 48 image hashes + 24 JSON hashes (LF), 456 fields/condition, identical numbers across languages: OK
+Notebook: schema, Python syntax, embedded source parity, no saved error outputs: OK
+Measured results directory: results\intel
+ocr_psm3.json: 48 saved images, all scores independently recomputed: OK
+ocr_psm4.json: 48 saved images, all scores independently recomputed: OK
+ocr_psm6.json: 48 saved images, all scores independently recomputed: OK
+ocr_psm11.json: 48 saved images, all scores independently recomputed: OK
+vlm.json: 48 saved images, all scores independently recomputed: OK
+vlm_kk_letters.json: 16 saved images, all scores independently recomputed: OK
+Environment, raw journals, all aggregate metrics and both reports: OK
+All required experiments and notebook cells have saved results.
+Exit code: 0
+
+$ git diff --check
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lab04_report.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'verify_submission.py', LF will be replaced by CRLF the next time Git touches it
+Exit code: 0

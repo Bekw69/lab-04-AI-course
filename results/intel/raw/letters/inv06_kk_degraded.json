@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv06_kk",
+  "condition": "degraded",
+  "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Сарыарда Азия\",\n  \"seller_bin\": \"BС7417275626\",\n  \"buyer_name\": \"Нарынбек Трейд\",\n  \"items\": [\n    {\n      \"name\": \"Шак\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Кызылвия\",\n      \"qty\": 2000,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Іріз\",\n      \"qty\": 60,\n      \"unit_price\": 4050,\n      \"amount\": 263250\n    },\n    {\n      \"name\": \"Ту\",\n      \"qty\": 50,\n      \"unit_price\": 150,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+  "seconds": 26.58,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only. Copy every name letter by letter, exactly as printed. The text may contain the Kazakh letters ә ғ қ ң ө ұ ү һ і: do not replace them with Russian letters.",
+  "image_sha256": "bc7a6855daad2821207636c1c29bda6bc0dd7935db1c8bfe0134bd0b81a3801e",
+  "finished_at_utc": "2026-10-19T20:33:49.339783+00:00"
+}

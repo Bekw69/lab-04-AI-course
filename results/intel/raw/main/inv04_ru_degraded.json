@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv04_ru",
+  "condition": "degraded",
+  "raw": "{\n  \"invoice_number\": \"9834\",\n  \"date\": \"2026-10-02\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Арей Маркет\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Масло подсолнечное, 5 л\",\n      \"qty\": 90,\n      \"unit_price\": 3200,\n      \"amount\": 288000\n    },\n    {\n      \"name\": \"Марков, 10 кг\",\n      \"qty\": 20,\n      \"unit_price\": 2350,\n      \"amount\": 47000\n    },\n    {\n      \"name\": \"Молоко, 1 л\",\n      \"qty\": 130,\n      \"unit_price\": 470,\n      \"amount\": 61100\n    }\n  ],\n  \"total\": 396100\n}",
+  "seconds": 47.85,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "f743a77e5d25fab0e64a3510492293f98f2533f6275d523a8ec42259783855e0",
+  "finished_at_utc": "2026-10-19T19:46:32.651764+00:00"
+}

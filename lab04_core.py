@@ -253,11 +253,16 @@ def ocr_found(truth: dict[str, Any], text: str) -> dict[str, bool]:
 
 # ----------------------------------------------------------------------------- VLM side
 def pick_device() -> str:
-    """``cuda`` if present, else Apple ``mps``, else ``cpu``."""
+    """Pick an available PyTorch device: CUDA, Intel XPU, Apple MPS, or CPU.
+
+    Intel GPUs without PyTorch XPU support can use the separate OpenVINO runner.
+    """
     import torch
 
     if torch.cuda.is_available():
         return "cuda"
+    if hasattr(torch, "xpu") and torch.xpu.is_available():
+        return "xpu"
     if torch.backends.mps.is_available():
         return "mps"
     return "cpu"
@@ -295,10 +300,13 @@ def vlm_extract(model: Any, processor: Any, image_path: str, *, prompt: str = PR
     Returns:
         The raw decoded answer, before any JSON parsing.
     """
+    text = prompt if hint is None else f"{prompt}\n\nOCR text of the same image (may contain errors):\n{hint}"
+    if getattr(model, "backend", None) == "openvino":
+        return model.extract(image_path, prompt=text, max_new_tokens=max_new_tokens)
+
     import torch
     from PIL import Image
 
-    text = prompt if hint is None else f"{prompt}\n\nOCR text of the same image (may contain errors):\n{hint}"
     with Image.open(image_path) as img:
         messages = [{"role": "user", "content": [{"type": "image", "image": img.convert("RGB")},
                                                     {"type": "text", "text": text}]}]

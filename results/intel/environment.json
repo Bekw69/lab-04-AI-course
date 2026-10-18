@@ -1,0 +1,30 @@
+{
+  "backend": "openvino",
+  "base_model_id": "Qwen/Qwen2-VL-2B-Instruct",
+  "model_id": "helenai/Qwen2-VL-2B-Instruct-ov-int4",
+  "model_revision": "3264f1a456ab58768dbeb514dcb348e4af16c392",
+  "device": "CPU",
+  "device_name": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "dtype": "INT4 language / INT8 vision and embeddings",
+  "quantized": true,
+  "activation_precision_hint": "FP32",
+  "device_policy": "AUTO uses the validated CPU path on Iris Xe",
+  "versions": {
+    "openvino": "2026.4.1",
+    "openvino-genai": "2026.4.1.0",
+    "openvino-tokenizers": "2026.4.1.0",
+    "huggingface-hub": "2.2.0",
+    "Pillow": "13.0.0",
+    "numpy": "2.5.4"
+  },
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "letter_prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only. Copy every name letter by letter, exactly as printed. The text may contain the Kazakh letters ә ғ қ ң ө ұ ү һ і: do not replace them with Russian letters.",
+  "max_new_tokens": 512,
+  "greedy": true,
+  "manifest_sha256": "65b333632453626305e5084bb0af7c57a84509a9e56166babb778e2860675796",
+  "python": "3.13.2",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "started_at_utc": "2026-10-19T19:26:49.336598+00:00",
+  "load_seconds": 7.6,
+  "finished_at_utc": "2026-10-19T20:38:17.704433+00:00"
+}

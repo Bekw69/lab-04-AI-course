@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+.tools/
+.venv/
+lab04_results.zip
+lab04_intel_results.zip
+results/intel/probes/
+tmp/pdfs/

@@ -1,0 +1,2143 @@
+{
+  "accuracy": {
+    "clean": {
+      "all": {
+        "ocr": {
+          "correct": 426,
+          "fields": 456,
+          "accuracy": 0.9342105263157895,
+          "wilson_95": [
+            0.9076349219700307,
+            0.9535311839238249
+          ]
+        },
+        "strict": {
+          "correct": 368,
+          "fields": 456,
+          "accuracy": 0.8070175438596491,
+          "wilson_95": [
+            0.7682910725255288,
+            0.8406142548741671
+          ]
+        },
+        "norm": {
+          "correct": 386,
+          "fields": 456,
+          "accuracy": 0.8464912280701754,
+          "wilson_95": [
+            0.8105216130616972,
+            0.876671542146531
+          ]
+        },
+        "norm_names": {
+          "correct": 62,
+          "fields": 126,
+          "accuracy": 0.49206349206349204,
+          "wilson_95": [
+            0.4063047244513012,
+            0.5782918917333423
+          ]
+        },
+        "norm_other": {
+          "correct": 324,
+          "fields": 330,
+          "accuracy": 0.9818181818181818,
+          "wilson_95": [
+            0.9609063068723462,
+            0.9916412486150465
+          ]
+        }
+      },
+      "kk": {
+        "ocr": {
+          "correct": 146,
+          "fields": 152,
+          "accuracy": 0.9605263157894737,
+          "wilson_95": [
+            0.916562422565575,
+            0.9817856436760447
+          ]
+        },
+        "strict": {
+          "correct": 103,
+          "fields": 152,
+          "accuracy": 0.6776315789473685,
+          "wilson_95": [
+            0.5997406722616577,
+            0.7467650104315385
+          ]
+        },
+        "norm": {
+          "correct": 107,
+          "fields": 152,
+          "accuracy": 0.7039473684210527,
+          "wilson_95": [
+            0.6270686253277898,
+            0.7707712325792132
+          ]
+        },
+        "norm_names": {
+          "correct": 1,
+          "fields": 42,
+          "accuracy": 0.023809523809523808,
+          "wilson_95": [
+            0.00421529549910029,
+            0.12321481165248252
+          ]
+        },
+        "norm_other": {
+          "correct": 106,
+          "fields": 110,
+          "accuracy": 0.9636363636363636,
+          "wilson_95": [
+            0.9102118658040408,
+            0.9857699194133138
+          ]
+        }
+      },
+      "ru": {
+        "ocr": {
+          "correct": 142,
+          "fields": 152,
+          "accuracy": 0.9342105263157895,
+          "wilson_95": [
+            0.883138307650452,
+            0.9638755833773609
+          ]
+        },
+        "strict": {
+          "correct": 126,
+          "fields": 152,
+          "accuracy": 0.8289473684210527,
+          "wilson_95": [
+            0.7611639749381933,
+            0.8805132152343922
+          ]
+        },
+        "norm": {
+          "correct": 134,
+          "fields": 152,
+          "accuracy": 0.881578947368421,
+          "wilson_95": [
+            0.8205787323018284,
+            0.9237668082983707
+          ]
+        },
+        "norm_names": {
+          "correct": 26,
+          "fields": 42,
+          "accuracy": 0.6190476190476191,
+          "wilson_95": [
+            0.46813768219996377,
+            0.7500047910121407
+          ]
+        },
+        "norm_other": {
+          "correct": 108,
+          "fields": 110,
+          "accuracy": 0.9818181818181818,
+          "wilson_95": [
+            0.9361185758998575,
+            0.9949997499142563
+          ]
+        }
+      },
+      "en": {
+        "ocr": {
+          "correct": 138,
+          "fields": 152,
+          "accuracy": 0.9078947368421053,
+          "wilson_95": [
+            0.8513378565779817,
+            0.9443418592360244
+          ]
+        },
+        "strict": {
+          "correct": 139,
+          "fields": 152,
+          "accuracy": 0.9144736842105263,
+          "wilson_95": [
+            0.8591749732799984,
+            0.9493382863374594
+          ]
+        },
+        "norm": {
+          "correct": 145,
+          "fields": 152,
+          "accuracy": 0.9539473684210527,
+          "wilson_95": [
+            0.9079985714145771,
+            0.9775159510235909
+          ]
+        },
+        "norm_names": {
+          "correct": 35,
+          "fields": 42,
+          "accuracy": 0.8333333333333334,
+          "wilson_95": [
+            0.693957037952257,
+            0.916841887041635
+          ]
+        },
+        "norm_other": {
+          "correct": 110,
+          "fields": 110,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9662548664108728,
+            1.0
+          ]
+        }
+      }
+    },
+    "degraded": {
+      "all": {
+        "ocr": {
+          "correct": 3,
+          "fields": 456,
+          "accuracy": 0.006578947368421052,
+          "wilson_95": [
+            0.0022398662631800837,
+            0.019162286130165795
+          ]
+        },
+        "strict": {
+          "correct": 237,
+          "fields": 456,
+          "accuracy": 0.5197368421052632,
+          "wilson_95": [
+            0.4739066731157016,
+            0.5652372407885645
+          ]
+        },
+        "norm": {
+          "correct": 248,
+          "fields": 456,
+          "accuracy": 0.543859649122807,
+          "wilson_95": [
+            0.49796732359338225,
+            0.5890191517494315
+          ]
+        },
+        "norm_names": {
+          "correct": 19,
+          "fields": 126,
+          "accuracy": 0.15079365079365079,
+          "wilson_95": [
+            0.09871172541981235,
+            0.22353938670449916
+          ]
+        },
+        "norm_other": {
+          "correct": 229,
+          "fields": 330,
+          "accuracy": 0.693939393939394,
+          "wilson_95": [
+            0.6422205391825049,
+            0.7411948290639929
+          ]
+        }
+      },
+      "kk": {
+        "ocr": {
+          "correct": 0,
+          "fields": 152,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.024650670937670042
+          ]
+        },
+        "strict": {
+          "correct": 63,
+          "fields": 152,
+          "accuracy": 0.4144736842105263,
+          "wilson_95": [
+            0.33920755690397625,
+            0.4939563736511516
+          ]
+        },
+        "norm": {
+          "correct": 66,
+          "fields": 152,
+          "accuracy": 0.4342105263157895,
+          "wilson_95": [
+            0.3579952497146258,
+            0.5136693122508571
+          ]
+        },
+        "norm_names": {
+          "correct": 0,
+          "fields": 42,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.08380161250916197
+          ]
+        },
+        "norm_other": {
+          "correct": 66,
+          "fields": 110,
+          "accuracy": 0.6,
+          "wilson_95": [
+            0.5065687300827921,
+            0.6866822431993824
+          ]
+        }
+      },
+      "ru": {
+        "ocr": {
+          "correct": 3,
+          "fields": 152,
+          "accuracy": 0.019736842105263157,
+          "wilson_95": [
+            0.006734529912818171,
+            0.056416772435207
+          ]
+        },
+        "strict": {
+          "correct": 83,
+          "fields": 152,
+          "accuracy": 0.5460526315789473,
+          "wilson_95": [
+            0.46674019289559576,
+            0.6230946137285661
+          ]
+        },
+        "norm": {
+          "correct": 88,
+          "fields": 152,
+          "accuracy": 0.5789473684210527,
+          "wilson_95": [
+            0.499458918610539,
+            0.6545436070308817
+          ]
+        },
+        "norm_names": {
+          "correct": 12,
+          "fields": 42,
+          "accuracy": 0.2857142857142857,
+          "wilson_95": [
+            0.1716685874457567,
+            0.43567496077245566
+          ]
+        },
+        "norm_other": {
+          "correct": 76,
+          "fields": 110,
+          "accuracy": 0.6909090909090909,
+          "wilson_95": [
+            0.5993322306151246,
+            0.769601445650845
+          ]
+        }
+      },
+      "en": {
+        "ocr": {
+          "correct": 0,
+          "fields": 152,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.024650670937670042
+          ]
+        },
+        "strict": {
+          "correct": 91,
+          "fields": 152,
+          "accuracy": 0.5986842105263158,
+          "wilson_95": [
+            0.519254675572563,
+            0.6732484814792127
+          ]
+        },
+        "norm": {
+          "correct": 94,
+          "fields": 152,
+          "accuracy": 0.618421052631579,
+          "wilson_95": [
+            0.5391769349477636,
+            0.6918268535143671
+          ]
+        },
+        "norm_names": {
+          "correct": 7,
+          "fields": 42,
+          "accuracy": 0.16666666666666666,
+          "wilson_95": [
+            0.08315811295836502,
+            0.30604296204774295
+          ]
+        },
+        "norm_other": {
+          "correct": 87,
+          "fields": 110,
+          "accuracy": 0.7909090909090909,
+          "wilson_95": [
+            0.7057473462909243,
+            0.8564373032572199
+          ]
+        }
+      }
+    }
+  },
+  "ocr_modes": {
+    "4": {
+      "clean": {
+        "correct": 426,
+        "fields": 456,
+        "accuracy": 0.9342105263157895,
+        "wilson_95": [
+          0.9076349219700307,
+          0.9535311839238249
+        ]
+      },
+      "degraded": {
+        "correct": 3,
+        "fields": 456,
+        "accuracy": 0.006578947368421052,
+        "wilson_95": [
+          0.0022398662631800837,
+          0.019162286130165795
+        ]
+      }
+    },
+    "3": {
+      "clean": {
+        "correct": 426,
+        "fields": 456,
+        "accuracy": 0.9342105263157895,
+        "wilson_95": [
+          0.9076349219700307,
+          0.9535311839238249
+        ]
+      },
+      "degraded": {
+        "correct": 5,
+        "fields": 456,
+        "accuracy": 0.010964912280701754,
+        "wilson_95": [
+          0.004692327985733491,
+          0.02540847194189376
+        ]
+      }
+    },
+    "6": {
+      "clean": {
+        "correct": 195,
+        "fields": 456,
+        "accuracy": 0.4276315789473684,
+        "wilson_95": [
+          0.38301273063235924,
+          0.4734595850519982
+        ]
+      },
+      "degraded": {
+        "correct": 35,
+        "fields": 456,
+        "accuracy": 0.07675438596491228,
+        "wilson_95": [
+          0.05570355336231669,
+          0.10487695957953111
+        ]
+      }
+    },
+    "11": {
+      "clean": {
+        "correct": 440,
+        "fields": 456,
+        "accuracy": 0.9649122807017544,
+        "wilson_95": [
+          0.9437676969806362,
+          0.9782889416531889
+        ]
+      },
+      "degraded": {
+        "correct": 33,
+        "fields": 456,
+        "accuracy": 0.07236842105263158,
+        "wilson_95": [
+          0.05199120798117468,
+          0.09989065742639175
+        ]
+      }
+    }
+  },
+  "dates": {
+    "clean": {
+      "strict": {
+        "correct": 6,
+        "fields": 24,
+        "accuracy": 0.25,
+        "wilson_95": [
+          0.1199920347934233,
+          0.4489982531210644
+        ]
+      },
+      "norm": {
+        "correct": 24,
+        "fields": 24,
+        "accuracy": 1.0,
+        "wilson_95": [
+          0.8620194241710247,
+          1.0
+        ]
+      }
+    },
+    "degraded": {
+      "strict": {
+        "correct": 11,
+        "fields": 24,
+        "accuracy": 0.4583333333333333,
+        "wilson_95": [
+          0.2789105835168143,
+          0.6492544644689336
+        ]
+      },
+      "norm": {
+        "correct": 22,
+        "fields": 24,
+        "accuracy": 0.9166666666666666,
+        "wilson_95": [
+          0.741507847985494,
+          0.9768416721570266
+        ]
+      }
+    }
+  },
+  "arithmetic": {
+    "clean": {
+      "wrong_totals": 0,
+      "caught": 0,
+      "right_totals": 24,
+      "right_flagged": 1,
+      "passed": 23,
+      "passed_with_errors": 17
+    },
+    "degraded": {
+      "wrong_totals": 6,
+      "caught": 6,
+      "right_totals": 18,
+      "right_flagged": 15,
+      "passed": 3,
+      "passed_with_errors": 3
+    }
+  },
+  "confusions": {
+    "all": {
+      "all_letters": [
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 11
+        },
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 8
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 6
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "ү",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+04AF",
+          "count": 5
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "д",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0434",
+          "count": 3
+        },
+        {
+          "true": "і",
+          "predicted": "и",
+          "true_codepoint": "U+0456",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "л",
+          "predicted": "р",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+0440",
+          "count": 2
+        },
+        {
+          "true": "й",
+          "predicted": "л",
+          "true_codepoint": "U+0439",
+          "predicted_codepoint": "U+043B",
+          "count": 2
+        },
+        {
+          "true": "ә",
+          "predicted": "ө",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+04E9",
+          "count": 2
+        },
+        {
+          "true": "ы",
+          "predicted": "и",
+          "true_codepoint": "U+044B",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "қ",
+          "predicted": "т",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0442",
+          "count": 2
+        },
+        {
+          "true": "Ш",
+          "predicted": "К",
+          "true_codepoint": "U+0428",
+          "predicted_codepoint": "U+041A",
+          "count": 2
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 2
+        },
+        {
+          "true": "о",
+          "predicted": "ө",
+          "true_codepoint": "U+043E",
+          "predicted_codepoint": "U+04E9",
+          "count": 1
+        },
+        {
+          "true": "н",
+          "predicted": "б",
+          "true_codepoint": "U+043D",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "ч",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+0447",
+          "count": 1
+        },
+        {
+          "true": "л",
+          "predicted": "п",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+043F",
+          "count": 1
+        },
+        {
+          "true": "К",
+          "predicted": "Г",
+          "true_codepoint": "U+041A",
+          "predicted_codepoint": "U+0413",
+          "count": 1
+        },
+        {
+          "true": "ү",
+          "predicted": "е",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "н",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "а",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0430",
+          "count": 1
+        },
+        {
+          "true": "ң",
+          "predicted": "н",
+          "true_codepoint": "U+04A3",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "у",
+          "predicted": "г",
+          "true_codepoint": "U+0443",
+          "predicted_codepoint": "U+0433",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "і",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "м",
+          "predicted": "л",
+          "true_codepoint": "U+043C",
+          "predicted_codepoint": "U+043B",
+          "count": 1
+        },
+        {
+          "true": "ы",
+          "predicted": "і",
+          "true_codepoint": "U+044B",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "и",
+          "predicted": "і",
+          "true_codepoint": "U+0438",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "қ",
+          "predicted": "б",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "о",
+          "predicted": "е",
+          "true_codepoint": "U+043E",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "л",
+          "predicted": "к",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+043A",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "ы",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+044B",
+          "count": 1
+        },
+        {
+          "true": "н",
+          "predicted": "м",
+          "true_codepoint": "U+043D",
+          "predicted_codepoint": "U+043C",
+          "count": 1
+        },
+        {
+          "true": "д",
+          "predicted": "л",
+          "true_codepoint": "U+0434",
+          "predicted_codepoint": "U+043B",
+          "count": 1
+        },
+        {
+          "true": "а",
+          "predicted": "у",
+          "true_codepoint": "U+0430",
+          "predicted_codepoint": "U+0443",
+          "count": 1
+        },
+        {
+          "true": "а",
+          "predicted": "е",
+          "true_codepoint": "U+0430",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "у",
+          "predicted": "я",
+          "true_codepoint": "U+0443",
+          "predicted_codepoint": "U+044F",
+          "count": 1
+        },
+        {
+          "true": "х",
+          "predicted": "м",
+          "true_codepoint": "U+0445",
+          "predicted_codepoint": "U+043C",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "е",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ],
+      "kazakh_specific": [
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 11
+        },
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 8
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 6
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "ү",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+04AF",
+          "count": 5
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "д",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0434",
+          "count": 3
+        },
+        {
+          "true": "і",
+          "predicted": "и",
+          "true_codepoint": "U+0456",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "ә",
+          "predicted": "ө",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+04E9",
+          "count": 2
+        },
+        {
+          "true": "қ",
+          "predicted": "т",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0442",
+          "count": 2
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 2
+        },
+        {
+          "true": "ғ",
+          "predicted": "ч",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+0447",
+          "count": 1
+        },
+        {
+          "true": "ү",
+          "predicted": "е",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "н",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "а",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0430",
+          "count": 1
+        },
+        {
+          "true": "ң",
+          "predicted": "н",
+          "true_codepoint": "U+04A3",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "і",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "қ",
+          "predicted": "б",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "ы",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+044B",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "е",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ]
+    },
+    "clean": {
+      "all_letters": [
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 9
+        },
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "ү",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+04AF",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 4
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 3
+        },
+        {
+          "true": "і",
+          "predicted": "и",
+          "true_codepoint": "U+0456",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "ә",
+          "predicted": "ө",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+04E9",
+          "count": 2
+        },
+        {
+          "true": "Ш",
+          "predicted": "К",
+          "true_codepoint": "U+0428",
+          "predicted_codepoint": "U+041A",
+          "count": 2
+        },
+        {
+          "true": "о",
+          "predicted": "ө",
+          "true_codepoint": "U+043E",
+          "predicted_codepoint": "U+04E9",
+          "count": 1
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "ы",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+044B",
+          "count": 1
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ],
+      "kazakh_specific": [
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 9
+        },
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "ү",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+04AF",
+          "count": 5
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 4
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 3
+        },
+        {
+          "true": "і",
+          "predicted": "и",
+          "true_codepoint": "U+0456",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "ә",
+          "predicted": "ө",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+04E9",
+          "count": 2
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "ы",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+044B",
+          "count": 1
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ]
+    },
+    "degraded": {
+      "all_letters": [
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "д",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0434",
+          "count": 3
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 2
+        },
+        {
+          "true": "л",
+          "predicted": "р",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+0440",
+          "count": 2
+        },
+        {
+          "true": "й",
+          "predicted": "л",
+          "true_codepoint": "U+0439",
+          "predicted_codepoint": "U+043B",
+          "count": 2
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 2
+        },
+        {
+          "true": "ы",
+          "predicted": "и",
+          "true_codepoint": "U+044B",
+          "predicted_codepoint": "U+0438",
+          "count": 2
+        },
+        {
+          "true": "қ",
+          "predicted": "т",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0442",
+          "count": 2
+        },
+        {
+          "true": "н",
+          "predicted": "б",
+          "true_codepoint": "U+043D",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "ч",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+0447",
+          "count": 1
+        },
+        {
+          "true": "л",
+          "predicted": "п",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+043F",
+          "count": 1
+        },
+        {
+          "true": "К",
+          "predicted": "Г",
+          "true_codepoint": "U+041A",
+          "predicted_codepoint": "U+0413",
+          "count": 1
+        },
+        {
+          "true": "ү",
+          "predicted": "е",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "н",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "а",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0430",
+          "count": 1
+        },
+        {
+          "true": "ң",
+          "predicted": "н",
+          "true_codepoint": "U+04A3",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 1
+        },
+        {
+          "true": "у",
+          "predicted": "г",
+          "true_codepoint": "U+0443",
+          "predicted_codepoint": "U+0433",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "і",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "м",
+          "predicted": "л",
+          "true_codepoint": "U+043C",
+          "predicted_codepoint": "U+043B",
+          "count": 1
+        },
+        {
+          "true": "ы",
+          "predicted": "і",
+          "true_codepoint": "U+044B",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "и",
+          "predicted": "і",
+          "true_codepoint": "U+0438",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "қ",
+          "predicted": "б",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "о",
+          "predicted": "е",
+          "true_codepoint": "U+043E",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "л",
+          "predicted": "к",
+          "true_codepoint": "U+043B",
+          "predicted_codepoint": "U+043A",
+          "count": 1
+        },
+        {
+          "true": "н",
+          "predicted": "м",
+          "true_codepoint": "U+043D",
+          "predicted_codepoint": "U+043C",
+          "count": 1
+        },
+        {
+          "true": "д",
+          "predicted": "л",
+          "true_codepoint": "U+0434",
+          "predicted_codepoint": "U+043B",
+          "count": 1
+        },
+        {
+          "true": "а",
+          "predicted": "у",
+          "true_codepoint": "U+0430",
+          "predicted_codepoint": "U+0443",
+          "count": 1
+        },
+        {
+          "true": "а",
+          "predicted": "е",
+          "true_codepoint": "U+0430",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "у",
+          "predicted": "я",
+          "true_codepoint": "U+0443",
+          "predicted_codepoint": "U+044F",
+          "count": 1
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "х",
+          "predicted": "м",
+          "true_codepoint": "U+0445",
+          "predicted_codepoint": "U+043C",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "е",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ],
+      "kazakh_specific": [
+        {
+          "true": "ү",
+          "predicted": "у",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0443",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "д",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0434",
+          "count": 3
+        },
+        {
+          "true": "Қ",
+          "predicted": "К",
+          "true_codepoint": "U+049A",
+          "predicted_codepoint": "U+041A",
+          "count": 3
+        },
+        {
+          "true": "қ",
+          "predicted": "к",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+043A",
+          "count": 2
+        },
+        {
+          "true": "І",
+          "predicted": "И",
+          "true_codepoint": "U+0406",
+          "predicted_codepoint": "U+0418",
+          "count": 2
+        },
+        {
+          "true": "қ",
+          "predicted": "т",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0442",
+          "count": 2
+        },
+        {
+          "true": "ғ",
+          "predicted": "ч",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+0447",
+          "count": 1
+        },
+        {
+          "true": "ү",
+          "predicted": "е",
+          "true_codepoint": "U+04AF",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "ғ",
+          "predicted": "н",
+          "true_codepoint": "U+0493",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "а",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0430",
+          "count": 1
+        },
+        {
+          "true": "ң",
+          "predicted": "н",
+          "true_codepoint": "U+04A3",
+          "predicted_codepoint": "U+043D",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "у",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0443",
+          "count": 1
+        },
+        {
+          "true": "ұ",
+          "predicted": "і",
+          "true_codepoint": "U+04B1",
+          "predicted_codepoint": "U+0456",
+          "count": 1
+        },
+        {
+          "true": "қ",
+          "predicted": "б",
+          "true_codepoint": "U+049B",
+          "predicted_codepoint": "U+0431",
+          "count": 1
+        },
+        {
+          "true": "ө",
+          "predicted": "е",
+          "true_codepoint": "U+04E9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        },
+        {
+          "true": "ә",
+          "predicted": "е",
+          "true_codepoint": "U+04D9",
+          "predicted_codepoint": "U+0435",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "letter_experiment": {
+    "clean": {
+      "before": {
+        "names": {
+          "correct": 1,
+          "fields": 42,
+          "accuracy": 0.023809523809523808,
+          "wilson_95": [
+            0.00421529549910029,
+            0.12321481165248252
+          ]
+        },
+        "all": {
+          "correct": 107,
+          "fields": 152,
+          "accuracy": 0.7039473684210527,
+          "wilson_95": [
+            0.6270686253277898,
+            0.7707712325792132
+          ]
+        },
+        "parsed_objects": 8
+      },
+      "after": {
+        "names": {
+          "correct": 6,
+          "fields": 42,
+          "accuracy": 0.14285714285714285,
+          "wilson_95": [
+            0.06715875684189933,
+            0.2784138235217878
+          ]
+        },
+        "all": {
+          "correct": 113,
+          "fields": 152,
+          "accuracy": 0.743421052631579,
+          "wilson_95": [
+            0.6685872290645806,
+            0.8062538916631327
+          ]
+        },
+        "parsed_objects": 8
+      },
+      "paired_names": {
+        "unchanged": 37,
+        "improved": 5
+      }
+    },
+    "degraded": {
+      "before": {
+        "names": {
+          "correct": 0,
+          "fields": 42,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.08380161250916197
+          ]
+        },
+        "all": {
+          "correct": 66,
+          "fields": 152,
+          "accuracy": 0.4342105263157895,
+          "wilson_95": [
+            0.3579952497146258,
+            0.5136693122508571
+          ]
+        },
+        "parsed_objects": 7
+      },
+      "after": {
+        "names": {
+          "correct": 0,
+          "fields": 42,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.08380161250916197
+          ]
+        },
+        "all": {
+          "correct": 78,
+          "fields": 152,
+          "accuracy": 0.5131578947368421,
+          "wilson_95": [
+            0.43435739989649,
+            0.5913096877104134
+          ]
+        },
+        "parsed_objects": 8
+      },
+      "paired_names": {
+        "unchanged": 42
+      }
+    }
+  },
+  "by_field": {
+    "clean": {
+      "ocr": {
+        "invoice_number": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        },
+        "date": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        },
+        "seller_name": {
+          "correct": 20,
+          "fields": 24,
+          "accuracy": 0.8333333333333334,
+          "wilson_95": [
+            0.6414652961213058,
+            0.9332143199927109
+          ]
+        },
+        "seller_bin": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        },
+        "buyer_name": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        },
+        "name": {
+          "correct": 52,
+          "fields": 78,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.5564120187982788,
+            0.7612748299436811
+          ]
+        },
+        "qty": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "unit_price": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "amount": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "total": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        }
+      },
+      "strict": {
+        "invoice_number": {
+          "correct": 22,
+          "fields": 24,
+          "accuracy": 0.9166666666666666,
+          "wilson_95": [
+            0.741507847985494,
+            0.9768416721570266
+          ]
+        },
+        "date": {
+          "correct": 6,
+          "fields": 24,
+          "accuracy": 0.25,
+          "wilson_95": [
+            0.1199920347934233,
+            0.4489982531210644
+          ]
+        },
+        "seller_name": {
+          "correct": 8,
+          "fields": 24,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.17971978688379642,
+            0.5329404050591954
+          ]
+        },
+        "seller_bin": {
+          "correct": 23,
+          "fields": 24,
+          "accuracy": 0.9583333333333334,
+          "wilson_95": [
+            0.7975777375115778,
+            0.992606734645195
+          ]
+        },
+        "buyer_name": {
+          "correct": 8,
+          "fields": 24,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.17971978688379642,
+            0.5329404050591954
+          ]
+        },
+        "name": {
+          "correct": 46,
+          "fields": 78,
+          "accuracy": 0.5897435897435898,
+          "wilson_95": [
+            0.4788794806670461,
+            0.6921826686555478
+          ]
+        },
+        "qty": {
+          "correct": 75,
+          "fields": 78,
+          "accuracy": 0.9615384615384616,
+          "wilson_95": [
+            0.8929137832970124,
+            0.9868344132191849
+          ]
+        },
+        "unit_price": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "amount": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "total": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        }
+      },
+      "norm": {
+        "invoice_number": {
+          "correct": 22,
+          "fields": 24,
+          "accuracy": 0.9166666666666666,
+          "wilson_95": [
+            0.741507847985494,
+            0.9768416721570266
+          ]
+        },
+        "date": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        },
+        "seller_name": {
+          "correct": 8,
+          "fields": 24,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.17971978688379642,
+            0.5329404050591954
+          ]
+        },
+        "seller_bin": {
+          "correct": 23,
+          "fields": 24,
+          "accuracy": 0.9583333333333334,
+          "wilson_95": [
+            0.7975777375115778,
+            0.992606734645195
+          ]
+        },
+        "buyer_name": {
+          "correct": 8,
+          "fields": 24,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.17971978688379642,
+            0.5329404050591954
+          ]
+        },
+        "name": {
+          "correct": 46,
+          "fields": 78,
+          "accuracy": 0.5897435897435898,
+          "wilson_95": [
+            0.4788794806670461,
+            0.6921826686555478
+          ]
+        },
+        "qty": {
+          "correct": 75,
+          "fields": 78,
+          "accuracy": 0.9615384615384616,
+          "wilson_95": [
+            0.8929137832970124,
+            0.9868344132191849
+          ]
+        },
+        "unit_price": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "amount": {
+          "correct": 78,
+          "fields": 78,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.9530605462258804,
+            1.0
+          ]
+        },
+        "total": {
+          "correct": 24,
+          "fields": 24,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.8620194241710247,
+            1.0
+          ]
+        }
+      }
+    },
+    "degraded": {
+      "ocr": {
+        "invoice_number": {
+          "correct": 2,
+          "fields": 24,
+          "accuracy": 0.08333333333333333,
+          "wilson_95": [
+            0.023158327842973503,
+            0.258492152014506
+          ]
+        },
+        "date": {
+          "correct": 0,
+          "fields": 24,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.13798057582897535
+          ]
+        },
+        "seller_name": {
+          "correct": 0,
+          "fields": 24,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.13798057582897535
+          ]
+        },
+        "seller_bin": {
+          "correct": 0,
+          "fields": 24,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.13798057582897535
+          ]
+        },
+        "buyer_name": {
+          "correct": 0,
+          "fields": 24,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.13798057582897535
+          ]
+        },
+        "name": {
+          "correct": 0,
+          "fields": 78,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.04693945377411976
+          ]
+        },
+        "qty": {
+          "correct": 0,
+          "fields": 78,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.04693945377411976
+          ]
+        },
+        "unit_price": {
+          "correct": 0,
+          "fields": 78,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.04693945377411976
+          ]
+        },
+        "amount": {
+          "correct": 0,
+          "fields": 78,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.04693945377411976
+          ]
+        },
+        "total": {
+          "correct": 1,
+          "fields": 24,
+          "accuracy": 0.041666666666666664,
+          "wilson_95": [
+            0.007393265354805126,
+            0.20242226248842232
+          ]
+        }
+      },
+      "strict": {
+        "invoice_number": {
+          "correct": 22,
+          "fields": 24,
+          "accuracy": 0.9166666666666666,
+          "wilson_95": [
+            0.741507847985494,
+            0.9768416721570266
+          ]
+        },
+        "date": {
+          "correct": 11,
+          "fields": 24,
+          "accuracy": 0.4583333333333333,
+          "wilson_95": [
+            0.2789105835168143,
+            0.6492544644689336
+          ]
+        },
+        "seller_name": {
+          "correct": 3,
+          "fields": 24,
+          "accuracy": 0.125,
+          "wilson_95": [
+            0.04344255039315584,
+            0.3100428814785757
+          ]
+        },
+        "seller_bin": {
+          "correct": 6,
+          "fields": 24,
+          "accuracy": 0.25,
+          "wilson_95": [
+            0.1199920347934233,
+            0.4489982531210644
+          ]
+        },
+        "buyer_name": {
+          "correct": 2,
+          "fields": 24,
+          "accuracy": 0.08333333333333333,
+          "wilson_95": [
+            0.023158327842973503,
+            0.258492152014506
+          ]
+        },
+        "name": {
+          "correct": 14,
+          "fields": 78,
+          "accuracy": 0.1794871794871795,
+          "wilson_95": [
+            0.11003815950408477,
+            0.2790255929152228
+          ]
+        },
+        "qty": {
+          "correct": 55,
+          "fields": 78,
+          "accuracy": 0.7051282051282052,
+          "wilson_95": [
+            0.5962399656958182,
+            0.794759232755825
+          ]
+        },
+        "unit_price": {
+          "correct": 58,
+          "fields": 78,
+          "accuracy": 0.7435897435897436,
+          "wilson_95": [
+            0.6368646338768925,
+            0.8274469142844337
+          ]
+        },
+        "amount": {
+          "correct": 48,
+          "fields": 78,
+          "accuracy": 0.6153846153846154,
+          "wilson_95": [
+            0.5044258131764942,
+            0.7155112359525552
+          ]
+        },
+        "total": {
+          "correct": 18,
+          "fields": 24,
+          "accuracy": 0.75,
+          "wilson_95": [
+            0.5510017468789357,
+            0.8800079652065766
+          ]
+        }
+      },
+      "norm": {
+        "invoice_number": {
+          "correct": 22,
+          "fields": 24,
+          "accuracy": 0.9166666666666666,
+          "wilson_95": [
+            0.741507847985494,
+            0.9768416721570266
+          ]
+        },
+        "date": {
+          "correct": 22,
+          "fields": 24,
+          "accuracy": 0.9166666666666666,
+          "wilson_95": [
+            0.741507847985494,
+            0.9768416721570266
+          ]
+        },
+        "seller_name": {
+          "correct": 3,
+          "fields": 24,
+          "accuracy": 0.125,
+          "wilson_95": [
+            0.04344255039315584,
+            0.3100428814785757
+          ]
+        },
+        "seller_bin": {
+          "correct": 6,
+          "fields": 24,
+          "accuracy": 0.25,
+          "wilson_95": [
+            0.1199920347934233,
+            0.4489982531210644
+          ]
+        },
+        "buyer_name": {
+          "correct": 2,
+          "fields": 24,
+          "accuracy": 0.08333333333333333,
+          "wilson_95": [
+            0.023158327842973503,
+            0.258492152014506
+          ]
+        },
+        "name": {
+          "correct": 14,
+          "fields": 78,
+          "accuracy": 0.1794871794871795,
+          "wilson_95": [
+            0.11003815950408477,
+            0.2790255929152228
+          ]
+        },
+        "qty": {
+          "correct": 55,
+          "fields": 78,
+          "accuracy": 0.7051282051282052,
+          "wilson_95": [
+            0.5962399656958182,
+            0.794759232755825
+          ]
+        },
+        "unit_price": {
+          "correct": 58,
+          "fields": 78,
+          "accuracy": 0.7435897435897436,
+          "wilson_95": [
+            0.6368646338768925,
+            0.8274469142844337
+          ]
+        },
+        "amount": {
+          "correct": 48,
+          "fields": 78,
+          "accuracy": 0.6153846153846154,
+          "wilson_95": [
+            0.5044258131764942,
+            0.7155112359525552
+          ]
+        },
+        "total": {
+          "correct": 18,
+          "fields": 24,
+          "accuracy": 0.75,
+          "wilson_95": [
+            0.5510017468789357,
+            0.8800079652065766
+          ]
+        }
+      }
+    }
+  },
+  "json": {
+    "clean": {
+      "raw_valid_objects": 0,
+      "recovered_objects": 24,
+      "token_limit_reached": 0,
+      "documents": 24
+    },
+    "degraded": {
+      "raw_valid_objects": 5,
+      "recovered_objects": 22,
+      "token_limit_reached": 1,
+      "documents": 24
+    }
+  },
+  "inference_seconds": {
+    "main": 2931.21,
+    "letters": 1354.64
+  }
+}

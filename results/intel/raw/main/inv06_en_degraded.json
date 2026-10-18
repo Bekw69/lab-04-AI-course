@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv06_en",
+  "condition": "degraded",
+  "raw": "```json\n{\n  \"invoice_number\": \"8224\",\n  \"date\": \"2026-10-01\",\n  \"seller_name\": \"Saryarka Azyk LLP\",\n  \"seller_bin\": \"7574172756263\",\n  \"buyer_name\": \"Narynolik Trade LLP\",\n  \"items\": [\n    {\n      \"name\": \"Tax\",\n      \"qty\": 115,\n      \"unit_price\": 980,\n      \"amount\": 112700\n    },\n    {\n      \"name\": \"Beetroot\",\n      \"qty\": 90,\n      \"unit_price\": 2000,\n      \"amount\": 180000\n    },\n    {\n      \"name\": \"Cheese\",\n      \"qty\": 65,\n      \"unit_price\": 4050,\n      \"amount\": 363250\n    },\n    {\n      \"name\": \"Salt\",\n      \"qty\": 50,\n      \"unit_price\": 1500,\n      \"amount\": 7500\n    }\n  ],\n  \"total\": 563450\n}\n```",
+  "seconds": 26.03,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "be0f510fbfdb8e4380134e2ca8cbc6f31c2330a472302f11c7b58c9180c51316",
+  "finished_at_utc": "2026-10-19T20:01:08.794307+00:00"
+}

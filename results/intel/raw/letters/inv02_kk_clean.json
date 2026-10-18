@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv02_kk",
+  "condition": "clean",
+  "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"14.09.2026\",\n  \"seller_name\": \"Шалкар Логистик\",\n  \"seller_bin\": \"376583942701\",\n  \"buyer_name\": \"Нарынкол Трейд\",\n  \"items\": [\n    {\n      \"name\": \"Каракумык\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Кунбафыс майы\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+  "seconds": 180.12,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only. Copy every name letter by letter, exactly as printed. The text may contain the Kazakh letters ә ғ қ ң ө ұ ү һ і: do not replace them with Russian letters.",
+  "image_sha256": "db6410a28a266be19edd0e5b1ca02db70a5ff871e95b6f021d0941f760f98402",
+  "finished_at_utc": "2026-10-19T20:21:37.143342+00:00"
+}

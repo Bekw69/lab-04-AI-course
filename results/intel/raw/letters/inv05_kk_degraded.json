@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv05_kk",
+  "condition": "degraded",
+  "raw": "{\n  \"invoice_number\": \"7036\",\n  \"date\": \"01.10.2026\",\n  \"seller_name\": \"Тан Нуры ЖШСС\",\n  \"seller_bin\": \"BC68982634684\",\n  \"buyer_name\": \"Ердембайтаг Аргы ЖШСС\",\n  \"items\": [\n    {\n      \"name\": \"Жіліртта, 30 д.н.\",\n      \"qty\": 2000,\n      \"unit_price\": 80000\n    },\n    {\n      \"name\": \"Тақ, 1 кг\",\n      \"qty\": 140,\n      \"unit_price\": 19800\n    },\n    {\n      \"name\": \"Бідай 1-сорт, 50 кг\",\n      \"qty\": 115,\n      \"unit_price\": 1673250\n    },\n    {\n      \"name\": \"Сут, 1 п.\",\n      \"qty\": 110,\n      \"unit_price\": 410\n    }\n  ],\n  \"total\": 1817250\n}",
+  "seconds": 28.51,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only. Copy every name letter by letter, exactly as printed. The text may contain the Kazakh letters ә ғ қ ң ө ұ ү һ і: do not replace them with Russian letters.",
+  "image_sha256": "bf6f6ab7d45f2733bda72fa23357c9d8957537c096cacf7668cfe6eb13707a3a",
+  "finished_at_utc": "2026-10-19T20:31:19.217566+00:00"
+}

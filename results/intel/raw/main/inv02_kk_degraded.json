@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv02_kk",
+  "condition": "degraded",
+  "raw": "```json\n{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"Шардар Логистик\",\n  \"seller_bin\": \"3765894270\",\n  \"buyer_name\": \"Нариман Трейд\",\n  \"items\": [\n    {\n      \"name\": \"Каркасный\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 132000\n    },\n    {\n      \"name\": \"Кубанский\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}\n```",
+  "seconds": 17.51,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "c4d3c67493e5341d4ab1261afda3b8be37b6d541a4e2a3efa9f61f7ce0f42c7b",
+  "finished_at_utc": "2026-10-19T19:33:46.872350+00:00"
+}

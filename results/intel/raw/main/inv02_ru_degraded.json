@@ -1,0 +1,9 @@
+{
+  "doc_id": "inv02_ru",
+  "condition": "degraded",
+  "raw": "{\n  \"invoice_number\": \"5149\",\n  \"date\": \"2026-09-14\",\n  \"seller_name\": \"TOO \",\n  \"seller_bin\": \"Шапар Логистик\",\n  \"buyer_name\": \"TOO \",\n  \"items\": [\n    {\n      \"name\": \"Греца\",\n      \"qty\": 75,\n      \"unit_price\": 17600,\n      \"amount\": 1320000\n    },\n    {\n      \"name\": \"Масло подсолнечное\",\n      \"qty\": 145,\n      \"unit_price\": 3300,\n      \"amount\": 478500\n    }\n  ],\n  \"total\": 1798500\n}",
+  "seconds": 19.77,
+  "prompt": "Extract this invoice as JSON with exactly these keys: invoice_number, date (YYYY-MM-DD), seller_name, seller_bin, buyer_name, items (list of objects with name, qty, unit_price, amount), total. Numbers must be plain integers. Output JSON only.",
+  "image_sha256": "1abccc165609877530c222a3debb9edba843da984a2e9b821ed375954f758c9a",
+  "finished_at_utc": "2026-10-19T19:35:26.293731+00:00"
+}
